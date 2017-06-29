@@ -5,3 +5,24 @@ body {
 .divider--mobile {
 	background-color: $pink;
 }
+
+.honeycomb__divider {
+	background-image: url("assets/images/honeycomb_BG.png");
+	background-repeat: repeat;
+	background-size: 50px auto;
+}
+
+.divider__gradient {
+	background: $navy; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(top,rgba(18, 30, 46,0),rgba(18, 30, 46,1) 70%); /*Safari 5.1-6*/
+	background: -o-linear-gradient(bottom,rgba(18, 30, 46,0),rgba(18, 30, 46,1) 70%); /*Opera 11.1-12*/
+	background: -moz-linear-gradient(bottom,rgba(18, 30, 46,0),rgba(18, 30, 46,1) 70%); /*Fx 3.6-15*/
+	background: linear-gradient(to bottom, rgba(18, 30, 46,0), rgba(18, 30, 46,1) 70%); /*Standard*/
+}
+
+.honeycomb__divider::before {
+	content: "";
+	background-image: url("assets/images/honeycomb_BG_Topper.png");
+	background-repeat: repeat-x;
+	background-size: 50px auto;
+}

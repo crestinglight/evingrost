@@ -1,0 +1,15 @@
+.footer {
+	background-color: $navy;
+	color: $pink;
+	font-family: $accent;
+	text-transform: uppercase;
+}
+
+.footer__links {
+	text-align: center;
+}
+
+.footer__links a {
+	display: block;
+	padding: 20px;
+}

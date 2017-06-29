@@ -71,6 +71,24 @@ img {
 .l-align--right {
   text-align: right; }
 
+.l-honeycomb__divider {
+  width: 100%;
+  height: 55px;
+  position: relative; }
+
+.l-divider__gradient {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+
+.l-honeycomb__divider::before {
+  display: block;
+  height: 30px;
+  position: relative;
+  top: -12px; }
+
 .l-header--desktop {
   display: none; }
 
@@ -141,11 +159,47 @@ img {
   padding-left: 30px;
   line-height: 1.8em; }
 
+.l-footer {
+  padding-bottom: 10px; }
+
+.l-footer__socials {
+  display: block;
+  text-align: center; }
+
+.l-footer__socials a {
+  display: inline-block;
+  max-width: 50px;
+  padding: 10px;
+  margin-bottom: 20px; }
+
 body {
   background-color: #f2f2f2; }
 
 .divider--mobile {
   background-color: #f1cac6; }
+
+.honeycomb__divider {
+  background-image: url("assets/images/honeycomb_BG.png");
+  background-repeat: repeat;
+  background-size: 50px auto; }
+
+.divider__gradient {
+  background: #121e2e;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(top, rgba(18, 30, 46, 0), #121e2e 70%);
+  /*Safari 5.1-6*/
+  background: -o-linear-gradient(bottom, rgba(18, 30, 46, 0), #121e2e 70%);
+  /*Opera 11.1-12*/
+  background: -moz-linear-gradient(bottom, rgba(18, 30, 46, 0), #121e2e 70%);
+  /*Fx 3.6-15*/
+  background: linear-gradient(to bottom, rgba(18, 30, 46, 0), #121e2e 70%);
+  /*Standard*/ }
+
+.honeycomb__divider::before {
+  content: "";
+  background-image: url("assets/images/honeycomb_BG_Topper.png");
+  background-repeat: repeat-x;
+  background-size: 50px auto; }
 
 .header--mobile {
   font-family: "Josefin Sans", sans-serif;
@@ -199,5 +253,18 @@ body {
   background-repeat: no-repeat;
   background-position: 12px 11px;
   background-size: 8px 8px; }
+
+.footer {
+  background-color: #121e2e;
+  color: #f1cac6;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase; }
+
+.footer__links {
+  text-align: center; }
+
+.footer__links a {
+  display: block;
+  padding: 20px; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -12,3 +12,24 @@
 .l-align--right {
 	text-align: right;
 }
+
+.l-honeycomb__divider {
+	width: 100%;
+	height: 55px;
+	position: relative;
+}
+
+.l-divider__gradient {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.l-honeycomb__divider::before {
+	display: block;
+	height: 30px;
+	position: relative;
+	top: -12px;
+}
