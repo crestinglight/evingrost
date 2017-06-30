@@ -11,3 +11,11 @@
 	color: $navy;
 	line-height: 1.5em;
 }
+
+
+@media (min-width: 650px){
+
+	.hero {
+		font-size: 6.5vw;
+	}
+}

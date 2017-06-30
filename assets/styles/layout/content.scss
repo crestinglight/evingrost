@@ -12,7 +12,7 @@
 .l-content__paragraph img {
 	display: block;
 	margin: 20px auto;
-	width: 80%;
+	width: 70%;
 }
 
 .l-content__paragraph p {
@@ -35,4 +35,36 @@
 	max-width: 50px;
 	margin-left: 15px;
 	margin-bottom: 10px;
+}
+
+@media (min-width: 450px){
+
+	.l-content__paragraph img.l-content__image--left {
+		max-width: 150px;
+		float: left;
+		margin-right: 12px;
+		margin-bottom: 12px;
+	}
+
+	.l-content__list {
+		display: -webkit-flex;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
+@media (min-width: 650px){
+
+	.l-content__block::before {
+		width: 15%;
+	}
+}
+
+@media (min-width: 800px){
+
+	.l-content__block {
+		max-width: 600px;
+		margin: 0px auto;
+	}
 }

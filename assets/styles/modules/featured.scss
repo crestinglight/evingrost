@@ -1,3 +1,23 @@
-.featured ul li {
+.featured--mobile ul li {
 	border: 1px solid $pink;
+}
+
+
+@media (min-width: 800px){
+
+	.hexrow > div {
+		background-image: url("assets/images/800x800.png");
+		background-position: -12px -53px; /* -left position -1 x width x sin(30) */
+		background-repeat: no-repeat;
+		background-size: 120% auto;
+		color: $navy;
+		text-align: center;
+		line-height: 173.2px; /*equals height*/
+	}
+
+	.hexrow > div span{
+		color: $pink;
+		font-family: $accent;
+		text-transform: uppercase;
+	}
 }

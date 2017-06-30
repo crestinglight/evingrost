@@ -1,3 +1,11 @@
+.footer::before {
+	content: "";
+	display: block;
+	background-image: url("assets/images/honeycomb_BG2.png");
+	background-repeat: repeat-x;
+	background-size: 36px auto;
+}
+
 .footer {
 	background-color: $navy;
 	color: $pink;
@@ -9,7 +17,3 @@
 	text-align: center;
 }
 
-.footer__links a {
-	display: block;
-	padding: 20px;
-}
