@@ -16,6 +16,36 @@
 @media (min-width: 650px){
 
 	.hero {
-		font-size: 6.5vw;
+		font-size: 5.5vw;
+	}
+}
+
+@media (min-width: 1024px){
+
+	.header--desktop {
+		color: $pink;
+		font-family: $accent;
+		text-transform: uppercase;
+	}
+
+	.header--desktop ul li a {
+		border-bottom: 1px solid $pink;
+		transition: all 0.4s ease;
+	}
+
+	.header--desktop ul li a:hover {
+		color: $navy;
+		border-bottom: 1px solid $navy;
+	}
+
+	.hero {
+		font-size: 50px;
+	}
+}
+
+@media (min-width: 1200px){
+
+	.hero {
+		font-size: 60px;
 	}
 }

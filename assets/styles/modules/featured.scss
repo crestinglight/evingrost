@@ -5,19 +5,29 @@
 
 @media (min-width: 800px){
 
-	.hexrow > div {
-		background-image: url("assets/images/800x800.png");
-		background-position: -12px -53px; /* -left position -1 x width x sin(30) */
+	.hex--01 a {
+		background-image: url("assets/images/RedstoneLogo.png");
+		background-color: $lightPink;
 		background-repeat: no-repeat;
-		background-size: 120% auto;
-		color: $navy;
+		background-position: 50% 50%;
+		background-size: auto 220px;
 		text-align: center;
-		line-height: 173.2px; /*equals height*/
+		color: $navy;
 	}
 
-	.hexrow > div span{
-		color: $pink;
-		font-family: $accent;
-		text-transform: uppercase;
+	.hex--01--01 {
+		background: inherit;
+	}
+
+	.hex--01--01:before {
+		background: inherit;
+	}
+
+	.hex--01--02 {
+		background: inherit;
+	}
+
+	.hex--01--02:before {
+		background: inherit;
 	}
 }

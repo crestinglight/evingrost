@@ -37,13 +37,13 @@
 		-webkit-flex-direction: row-reverse;
 		flex-direction: row-reverse;
 		margin-bottom: 10px;
+		padding: 0px 15px;
 	}
 
 	.l-footer__socials {
 		display: -webkit-flex;
 		display: flex;
 		padding-top: 0px;
-		padding-right: 15px;
 	}
 
 	.l-footer__socials a {
@@ -52,12 +52,18 @@
 	}
 
 	.l-footer__links {
-		padding-left: 15px;
 	}
 
 	.l-footer__links a {
 		display: inline-block;
 		padding: 8px;
 		font-size: 12px;
+	}
+}
+
+@media (min-width: 800px){
+
+	.l-footer__content {
+		padding: 0px 30px;
 	}
 }
