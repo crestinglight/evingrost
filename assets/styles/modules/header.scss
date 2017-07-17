@@ -23,13 +23,13 @@
 @media (min-width: 1024px){
 
 	.header--desktop {
-		color: $pink;
+		color: $orange;
 		font-family: $accent;
 		text-transform: uppercase;
 	}
 
 	.header--desktop ul li a {
-		border-bottom: 1px solid $pink;
+		border-bottom: 1px solid $orange;
 		transition: all 0.4s ease;
 	}
 

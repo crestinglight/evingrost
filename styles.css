@@ -401,12 +401,12 @@ body {
   background-color: #f2f2f2; }
 
 .divider--mobile {
-  background-color: #e287a3; }
+  background-color: #f97a25; }
 
 .honeycomb__divider {
   background-image: url("assets/images/honeycomb_BG_Topper2.png");
   background-repeat: repeat-x;
-  background-size: 36px auto; }
+  background-size: 18px auto; }
 
 .divider__gradient {
   background: #121e2e;
@@ -437,12 +437,12 @@ body {
     font-size: 5.5vw; } }
 @media (min-width: 1024px) {
   .header--desktop {
-    color: #e287a3;
+    color: #f97a25;
     font-family: "Josefin Sans", sans-serif;
     text-transform: uppercase; }
 
   .header--desktop ul li a {
-    border-bottom: 1px solid #e287a3;
+    border-bottom: 1px solid #f97a25;
     transition: all 0.4s ease; }
 
   .header--desktop ul li a:hover {
@@ -455,12 +455,12 @@ body {
   .hero {
     font-size: 60px; } }
 .featured--mobile ul li {
-  border: 1px solid #e287a3; }
+  border: 1px solid #f97a25; }
 
 @media (min-width: 800px) {
   .hex--01 a {
     background-image: url("assets/images/RedstoneLogo.png");
-    background-color: #f1c6cc;
+    background-color: #ffb889;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: auto 220px;
@@ -480,7 +480,7 @@ body {
     background: inherit; } }
 .content__block::before {
   content: "";
-  background-color: #e287a3; }
+  background-color: #f97a25; }
 
 .content__block h1 {
   color: #121e2e;
@@ -525,7 +525,7 @@ body {
 
 .footer {
   background-color: #121e2e;
-  color: #e287a3;
+  color: #f97a25;
   font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase; }
 
