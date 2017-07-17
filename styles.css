@@ -87,7 +87,7 @@ img {
 @media (min-width: 650px) {
   .l-wrapper {
     max-width: 600px;
-    margin: 0px auto; }
+    margin: 0px auto 50px; }
 
   .l-divider--mobile {
     width: 45%; } }
@@ -121,11 +121,12 @@ img {
 
 @media (min-width: 500px) {
   .l-navigation--mobile ul {
-    max-width: 450px;
+    max-width: 500px;
     margin: 0px auto; }
 
   .l-navigation--mobile ul li {
-    display: inline-block; }
+    display: inline-block;
+    margin: 10px 20px; }
 
   .l-navigation--mobile ul li a {
     display: inline-block; } }
@@ -291,6 +292,9 @@ img {
   margin-left: 15px;
   margin-bottom: 10px; }
 
+.l-content {
+  margin: 70px 0px; }
+
 @media (min-width: 450px) {
   .l-content__paragraph img.l-content__image--left {
     max-width: 150px;
@@ -309,7 +313,39 @@ img {
 @media (min-width: 800px) {
   .l-content__block {
     max-width: 600px;
-    margin: 0px auto; } }
+    margin: 0px auto; }
+
+  .l-content {
+    max-width: 600px;
+    margin: 70px auto; } }
+.l-contact p {
+  display: block;
+  margin-bottom: 30px; }
+
+.l-contact span {
+  display: inline-block;
+  width: calc(25% - 20px);
+  margin-right: 20px; }
+
+.l-contact input[type="text"],
+.l-contact input[type="email"] {
+  display: inline-block;
+  width: calc(75% - 10px);
+  margin-bottom: 32px;
+  padding: 5px; }
+
+.l-contact .l-message {
+  display: block;
+  margin-bottom: 20px; }
+
+.l-contact textarea {
+  display: block;
+  width: 100%;
+  resize: vertical; }
+
+@media (min-width: 800px) {
+  .l-contact p {
+    margin-bottom: 50px; } }
 .l-services__item {
   margin: 50px 0px; }
 
@@ -403,18 +439,18 @@ img {
   .l-footer__content {
     padding: 0px 30px; } }
 body {
-  background-color: #f2f2f2; }
+  background-color: #282828; }
 
 .divider--mobile {
   background-color: #f97a25; }
 
 .honeycomb__divider {
-  background-image: url("assets/images/honeycomb_BG_Topper2.png");
+  background-image: url("assets/images/Cerious/honeycomb_BG_Topper_white.png");
   background-repeat: repeat-x;
   background-size: 18px auto; }
 
 .divider__gradient {
-  background: #121e2e;
+  background: #f2f2f2;
   /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(top, rgba(18, 30, 46, 0), #121e2e 70%);
   /*Safari 5.1-6*/
@@ -426,19 +462,27 @@ body {
   /*Standard*/ }
 
 .header--mobile {
-  font-family: "Josefin Sans", sans-serif;
-  color: #121e2e;
+  font-family: "Noto Sans", sans-serif;
+  color: #f2f2f2;
   font-size: 1.5em;
   text-transform: uppercase; }
 
 .hero {
   font-family: "Lato", sans-serif;
   font-size: 2.3em;
-  color: #121e2e;
+  color: #f2f2f2;
   line-height: 1.5em; }
+
+.hero p {
+  font-size: 0.35em;
+  line-height: 1.2em;
+  -webkit-font-smoothing: antialiased; }
 
 .button--shop {
   border: 1px solid #f97a25; }
+
+.navigation--mobile ul li a {
+  letter-spacing: 1px; }
 
 @media (min-width: 650px) {
   .hero {
@@ -446,16 +490,17 @@ body {
 @media (min-width: 1024px) {
   .header--desktop {
     color: #f97a25;
-    font-family: "Josefin Sans", sans-serif;
-    text-transform: uppercase; }
+    font-family: "Noto Sans", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
 
   .header--desktop ul li a {
     border-bottom: 1px solid #f97a25;
     transition: all 0.4s ease; }
 
   .header--desktop ul li a:hover {
-    color: #121e2e;
-    border-bottom: 1px solid #121e2e; }
+    color: #f2f2f2;
+    border-bottom: 1px solid #f2f2f2; }
 
   .hero {
     font-size: 50px; } }
@@ -463,17 +508,17 @@ body {
   .hero {
     font-size: 60px; } }
 .featured--mobile ul li {
-  border: 1px solid #f97a25; }
+  border: 1px solid #f2f2f2; }
 
 @media (min-width: 800px) {
   .hex--01 a {
     background-image: url("assets/images/RedstoneLogo.png");
-    background-color: #ffb889;
+    background-color: #f2f2f2;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: auto 220px;
     text-align: center;
-    color: #121e2e; }
+    color: #f2f2f2; }
 
   .hex--01--01 {
     background: inherit; }
@@ -491,30 +536,77 @@ body {
   background-color: #f97a25; }
 
 .content__block h1 {
-  color: #121e2e;
-  font-family: "Josefin Sans", sans-serif;
+  color: #f2f2f2;
+  font-family: "Noto Sans", sans-serif;
   font-size: 1.5em;
   text-transform: uppercase;
   text-align: center; }
 
 .content__paragraph p {
-  color: #121e2e;
+  color: #f2f2f2;
   font-family: "Lato", sans-serif;
   font-size: 0.9em;
   line-height: 1.4em; }
 
 .content__love {
-  color: #121e2e;
+  color: #f2f2f2;
   font-family: "Lato", sans-serif;
   font-size: 0.9em;
   line-height: 1.4em; }
 
+.contact {
+  color: #f2f2f2;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  -webkit-font-smoothing: antialiased; }
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px dashed #f97a25;
+  color: #f2f2f2;
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
+  line-height: 1em; }
+
+.contact textarea {
+  line-height: 1.3em; }
+
+.contact input[type="text"]:focus,
+.contact input[type="email"]:focus,
+.contact textarea:focus {
+  outline: none;
+  border-bottom: 1px solid #f97a25; }
+
+.contact input[type="text"]::-webkit-input-placeholder,
+.contact input[type="email"]::-webkit-input-placeholder,
+.contact textarea::-webkit-input-placeholder {
+  color: #656565; }
+
+.contact input[type="text"]::-moz-placeholder,
+.contact input[type="email"]::-moz-placeholder,
+.contact textarea::-moz-placeholder {
+  color: #656565; }
+
+.contact input[type="text"]:-ms-input-placeholder,
+.contact input[type="email"]:-ms-input-placeholder,
+.contact textarea:-ms-input-placeholder {
+  color: #656565; }
+
+.contact input[type="text"]:-moz-placeholder,
+.contact input[type="email"]:-moz-placeholder,
+.contact textarea:-moz-placeholder {
+  color: #656565; }
+
 .services__item {
-  color: #121e2e;
+  color: #f2f2f2;
   font-family: "Lato", sans-serif; }
 
 .services__item h2 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   text-transform: uppercase;
   text-align: center; }
 
@@ -527,14 +619,14 @@ body {
 .footer::before {
   content: "";
   display: block;
-  background-image: url("assets/images/honeycomb_BG2.png");
+  background-image: url("assets/images/Cerious/honeycomb_BG_white.png");
   background-repeat: repeat-x;
   background-size: 36px auto; }
 
 .footer {
-  background-color: #121e2e;
+  background-color: #f2f2f2;
   color: #f97a25;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   text-transform: uppercase; }
 
 .footer__links {

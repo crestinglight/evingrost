@@ -1,5 +1,5 @@
 .featured--mobile ul li {
-	border: 1px solid $orange;
+	border: 1px solid $secondary;
 }
 
 
@@ -7,12 +7,12 @@
 
 	.hex--01 a {
 		background-image: url("assets/images/RedstoneLogo.png");
-		background-color: $sherbet;
+		background-color: $secondary;
 		background-repeat: no-repeat;
 		background-position: 50% 50%;
 		background-size: auto 220px;
 		text-align: center;
-		color: $navy;
+		color: $secondary;
 	}
 
 	.hex--01--01 {

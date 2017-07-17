@@ -1,14 +1,14 @@
 .footer::before {
 	content: "";
 	display: block;
-	background-image: url("assets/images/honeycomb_BG2.png");
+	background-image: url("assets/images/Cerious/honeycomb_BG_white.png");
 	background-repeat: repeat-x;
 	background-size: 36px auto;
 }
 
 .footer {
-	background-color: $navy;
-	color: $orange;
+	background-color: $secondary;
+	color: $tertiary;
 	font-family: $accent;
 	text-transform: uppercase;
 }

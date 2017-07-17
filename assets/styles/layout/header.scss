@@ -30,12 +30,13 @@
 @media (min-width: 500px){
 
 	.l-navigation--mobile ul {
-		max-width: 450px;
+		max-width: 500px;
 		margin: 0px auto;
 	}
 
 	.l-navigation--mobile ul li {
 		display: inline-block;
+		margin: 10px 20px;
 	}
 
 	.l-navigation--mobile ul li a {

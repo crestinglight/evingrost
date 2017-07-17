@@ -1,19 +1,19 @@
 body {
-	background-color: $paleGray;
+	background-color: $primary;
 }
 
 .divider--mobile {
-	background-color: $orange;
+	background-color: $tertiary;
 }
 
 .honeycomb__divider {
-	background-image: url("assets/images/honeycomb_BG_Topper2.png");
+	background-image: url("assets/images/Cerious/honeycomb_BG_Topper_white.png");
 	background-repeat: repeat-x;
 	background-size: 18px auto;
 }
 
 .divider__gradient {
-	background: $navy; /* For browsers that do not support gradients */
+	background: $secondary; /* For browsers that do not support gradients */
 	background: -webkit-linear-gradient(top,rgba(18, 30, 46,0),rgba(18, 30, 46,1) 70%); /*Safari 5.1-6*/
 	background: -o-linear-gradient(bottom,rgba(18, 30, 46,0),rgba(18, 30, 46,1) 70%); /*Opera 11.1-12*/
 	background: -moz-linear-gradient(bottom,rgba(18, 30, 46,0),rgba(18, 30, 46,1) 70%); /*Fx 3.6-15*/
