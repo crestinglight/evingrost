@@ -41,6 +41,10 @@
 	margin: 70px 0px;
 }
 
+.l-content p {
+	margin-bottom: 30px;
+}
+
 @media (min-width: 450px){
 
 	.l-content__paragraph img.l-content__image--left {
@@ -75,5 +79,12 @@
 	.l-content {
 		max-width: 600px;
 		margin: 70px auto;
+	}
+}
+
+@media (min-width: 1024px){
+
+	.l-content {
+		max-width: 800px;
 	}
 }

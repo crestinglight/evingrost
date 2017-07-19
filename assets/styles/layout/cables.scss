@@ -1,0 +1,38 @@
+.l-cables {
+	text-align: center;
+}
+
+.l-cables__content h1 {
+	margin: 0px auto 85px;
+}
+
+.l-cables__content h2 {
+	margin-top: 85px;
+	margin-bottom: 30px;
+}
+
+.l-cables img {
+	max-width: 250px;
+	display: block;
+	margin: 0px auto 30px;
+}
+
+.l-cables__content p {
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+.shop--cables {
+	display: inline-block;
+	margin: 20px 0px;
+	padding: 20px;
+}
+
+@media (min-width: 800px){
+
+	.l-cables__content img {
+		float: left;
+		margin: 0px 30px 15px 0px;
+		max-width: 170px;
+	}
+}

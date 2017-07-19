@@ -1,0 +1,32 @@
+.cables__content {
+	color: $secondary;
+}
+
+.cables__content h1 {
+	font-family: $accent;
+	font-size: 3em;
+	text-align: center;
+}
+
+.cables__content h2 {
+	font-family: $main;
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+
+.cables__content p {
+	font-family: $main;
+	font-size: 1.1em;
+	line-height: 1.2em;
+	-webkit-font-smoothing: antialiased;
+}
+
+.shop--cables {
+	color: $tertiary;
+	font-family: $accent;
+	text-transform: uppercase;
+	text-align: center;
+	border: 1px solid $tertiary;
+	-webkit-font-smoothing: antialiased;
+	line-height: 1.4em;
+}

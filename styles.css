@@ -295,6 +295,9 @@ img {
 .l-content {
   margin: 70px 0px; }
 
+.l-content p {
+  margin-bottom: 30px; }
+
 @media (min-width: 450px) {
   .l-content__paragraph img.l-content__image--left {
     max-width: 150px;
@@ -318,6 +321,9 @@ img {
   .l-content {
     max-width: 600px;
     margin: 70px auto; } }
+@media (min-width: 1024px) {
+  .l-content {
+    max-width: 800px; } }
 .l-contact p {
   display: block;
   margin-bottom: 30px; }
@@ -345,7 +351,53 @@ img {
 
 @media (min-width: 800px) {
   .l-contact p {
-    margin-bottom: 50px; } }
+    margin-bottom: 50px; }
+
+  .l-contact form {
+    max-width: 600px;
+    margin: 80px auto 0px; } }
+.l-cables {
+  text-align: center; }
+
+.l-cables__content h1 {
+  margin: 0px auto 85px; }
+
+.l-cables__content h2 {
+  margin-top: 85px;
+  margin-bottom: 30px; }
+
+.l-cables img {
+  max-width: 250px;
+  display: block;
+  margin: 0px auto 30px; }
+
+.l-cables__content p {
+  margin-bottom: 20px;
+  text-align: left; }
+
+.shop--cables {
+  display: inline-block;
+  margin: 20px 0px;
+  padding: 20px; }
+
+@media (min-width: 800px) {
+  .l-cables__content img {
+    float: left;
+    margin: 0px 30px 15px 0px;
+    max-width: 170px; } }
+.l-team__member img {
+  display: block;
+  max-width: 250px;
+  margin: 0px auto; }
+
+.l-team__member h2 {
+  display: block;
+  margin: 40px 0px 20px; }
+
+.l-team__member h3 {
+  display: block;
+  margin-bottom: 30px; }
+
 .l-services__item {
   margin: 50px 0px; }
 
@@ -554,6 +606,12 @@ body {
   font-size: 0.9em;
   line-height: 1.4em; }
 
+.content p {
+  color: #f2f2f2;
+  font-family: "Lato", sans-serif;
+  font-size: 1.2em;
+  line-height: 1.3em; }
+
 .contact {
   color: #f2f2f2;
   font-family: "Noto Sans", sans-serif;
@@ -601,6 +659,53 @@ body {
 .contact textarea:-moz-placeholder {
   color: #656565; }
 
+.cables__content {
+  color: #f2f2f2; }
+
+.cables__content h1 {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 3em;
+  text-align: center; }
+
+.cables__content h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase; }
+
+.cables__content p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.1em;
+  line-height: 1.2em;
+  -webkit-font-smoothing: antialiased; }
+
+.shop--cables {
+  color: #f97a25;
+  font-family: "Noto Sans", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid #f97a25;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.4em; }
+
+.team__member h2 {
+  color: #f97a25;
+  font-family: "Lato", sans-serif;
+  font-size: 1.3em;
+  text-transform: uppercase; }
+
+.team__member h3 {
+  color: #f2f2f2;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.1em;
+  line-height: 1.4em; }
+
+.team__member {
+  text-align: center; }
+
+.team__member p {
+  -webkit-font-smoothing: antialiased;
+  text-align: left; }
+
 .services__item {
   color: #f2f2f2;
   font-family: "Lato", sans-serif; }
@@ -631,5 +736,12 @@ body {
 
 .footer__links {
   text-align: center; }
+
+@media (min-width: 800px) {
+  .footer__links a {
+    transition: color 0.3s ease; }
+
+  .footer__links a:hover {
+    color: #282828; } }
 
 /*# sourceMappingURL=styles.css.map */
