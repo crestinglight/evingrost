@@ -349,13 +349,21 @@ img {
   width: 100%;
   resize: vertical; }
 
+.l-contact__submit {
+  display: block;
+  margin: 40px auto 0px;
+  padding: 10px 20px; }
+
 @media (min-width: 800px) {
   .l-contact p {
     margin-bottom: 50px; }
 
   .l-contact form {
     max-width: 600px;
-    margin: 80px auto 0px; } }
+    margin: 80px auto 0px; }
+
+  .l-contact__submit {
+    margin-top: 60px; } }
 .l-cables {
   text-align: center; }
 
@@ -398,6 +406,17 @@ img {
   display: block;
   margin-bottom: 30px; }
 
+@media (min-width: 800px) {
+  .l-team {
+    display: flex;
+    justify-content: space-between; }
+
+  .l-team__member {
+    width: calc(50% - 50px); }
+
+  .l-content__block.l-team__block {
+    margin: 0px;
+    min-width: 100%; } }
 .l-services__item {
   margin: 50px 0px; }
 
@@ -659,6 +678,24 @@ body {
 .contact textarea:-moz-placeholder {
   color: #656565; }
 
+.contact__submit {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  color: #f97a25;
+  background-color: transparent;
+  border: 1px solid #f97a25;
+  font-size: 1.2em;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase; }
+
+@media (min-width: 800px) {
+  .contact__submit {
+    transition: all 0.2s ease; }
+
+  .contact__submit:hover {
+    color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    background-color: #f97a25; } }
 .cables__content {
   color: #f2f2f2; }
 
@@ -687,6 +724,14 @@ body {
   -webkit-font-smoothing: antialiased;
   line-height: 1.4em; }
 
+@media (min-width: 800px) {
+  .shop--cables {
+    transition: all 0.2s ease; }
+
+  .shop--cables:hover {
+    color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    background-color: #f97a25; } }
 .team__member h2 {
   color: #f97a25;
   font-family: "Lato", sans-serif;

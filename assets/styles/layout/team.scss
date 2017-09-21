@@ -13,3 +13,20 @@
 	display: block;
 	margin-bottom: 30px;
 }
+
+@media (min-width: 800px){
+
+	.l-team {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.l-team__member {
+		width: calc(50% - 50px);
+	}
+
+	.l-content__block.l-team__block {
+		margin: 0px;
+		min-width: 100%;
+	}
+}

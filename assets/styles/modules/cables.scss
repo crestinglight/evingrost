@@ -30,3 +30,16 @@
 	-webkit-font-smoothing: antialiased;
 	line-height: 1.4em;
 }
+
+@media (min-width: 800px){
+
+	.shop--cables {
+		transition: all 0.2s ease;
+	}
+
+	.shop--cables:hover {
+		color: $secondary;
+		border: 1px solid $secondary;
+		background-color: $tertiary;
+	}
+}

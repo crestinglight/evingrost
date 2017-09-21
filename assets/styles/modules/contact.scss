@@ -52,3 +52,27 @@
 .contact textarea:-moz-placeholder { 
   color: $quaternary;
 }
+
+.contact__submit {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	color: $tertiary;
+	background-color: transparent;
+	border: 1px solid $tertiary;
+	font-size: 1.2em;
+	font-family: $main;
+	text-transform: uppercase;
+}
+
+@media (min-width: 800px){
+
+	.contact__submit {
+		transition: all 0.2s ease;
+	}
+
+	.contact__submit:hover {
+		color: $secondary;
+		border: 1px solid $secondary;
+		background-color: $tertiary;
+	}
+}

@@ -28,6 +28,12 @@
 	resize: vertical;
 }
 
+.l-contact__submit {
+	display: block;
+	margin: 40px auto 0px;
+	padding: 10px 20px;
+}
+
 @media (min-width: 800px){
 
 	.l-contact p {
@@ -37,5 +43,9 @@
 	.l-contact form {
 		max-width: 600px;
 		margin: 80px auto 0px;
+	}
+
+	.l-contact__submit {
+		margin-top: 60px;
 	}
 }
