@@ -59,4 +59,104 @@ a {
 img {
   width: 100%; }
 
+.l-header--desktop {
+  display: none; }
+
+.l-header--mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 20px 30px; }
+
+.l-logo {
+  max-width: 130px; }
+
+.l-socials {
+  display: inline-block; }
+
+.l-socials a {
+  display: inline-block;
+  max-width: 115px;
+  padding: 18px; }
+
+.l-burger {
+  max-width: 150px; }
+
+.l-burger a {
+  display: block;
+  padding: 30px; }
+
+.l-navigation {
+  position: relative;
+  overflow: hidden;
+  max-height: 0px; }
+
+.l-navigation ul {
+  position: absolute;
+  top: -1px;
+  right: 0;
+  z-index: 2;
+  padding-bottom: 30px; }
+
+.l-navigation ul li a {
+  display: block;
+  padding: 20px 60px 20px 40px; }
+
+.l-hero {
+  display: block;
+  min-width: 100vw;
+  min-height: 600px;
+  padding: 40px 40px 60px; }
+
+.l-hero h1 {
+  margin-top: 30px;
+  margin-left: 60px; }
+
+.l-hero span {
+  display: block; }
+
+.l-hero span:nth-child(2) {
+  padding-left: 60px; }
+
+.l-hero span:nth-child(3) {
+  padding-left: 120px; }
+
+.l-about {
+  display: block;
+  min-width: 100vw;
+  padding: 40px; }
+
+.header {
+  background-color: #ff354a; }
+
+.navigation {
+  background-color: #ff354a;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase; }
+
+.navigation ul {
+  font-size: 80px;
+  background-color: #ff354a; }
+
+.hero {
+  font-family: "Oxygen", sans-serif;
+  color: #000;
+  font-size: 8vw;
+  line-height: 1.3em;
+  background-image: url("assets/images/heroLeft.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: 85% auto; }
+
+.about {
+  background-color: #F2F2F2; }
+
+.about h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 48px;
+  text-transform: uppercase;
+  text-align: center; }
+
 /*# sourceMappingURL=style.css.map */

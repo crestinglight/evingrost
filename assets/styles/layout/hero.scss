@@ -1,0 +1,23 @@
+.l-hero {
+	display: block;
+	min-width: 100vw;
+	min-height: 600px;
+	padding: 40px 40px 60px;
+}
+
+.l-hero h1 {
+	margin-top: 30px;
+	margin-left: 60px;
+}
+
+.l-hero span {
+	display: block;
+}
+
+.l-hero span:nth-child(2) {
+	padding-left: 60px;
+}
+
+.l-hero span:nth-child(3) {
+	padding-left: 120px;
+}

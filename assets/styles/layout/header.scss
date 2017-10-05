@@ -1,0 +1,53 @@
+.l-header--desktop {
+	display: none;
+}
+
+.l-header--mobile {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	padding: 20px 30px;
+}
+
+.l-logo {
+	max-width: 130px;
+}
+
+.l-socials {
+	display: inline-block;
+}
+
+.l-socials a {
+	display: inline-block;
+	max-width: 115px;
+	padding: 18px;
+}
+
+.l-burger {
+	max-width: 150px;
+}
+
+.l-burger a {
+	display: block;
+	padding: 30px;
+}
+
+.l-navigation {
+	position: relative;
+	overflow: hidden;
+	max-height: 0px;
+}
+
+.l-navigation ul {
+	position: absolute;
+	top: -1px;
+	right: 0;
+	z-index: 2;
+	padding-bottom: 30px;
+}
+
+.l-navigation ul li a {
+	display: block;
+	padding: 20px 60px 20px 40px;
+}

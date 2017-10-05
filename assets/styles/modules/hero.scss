@@ -1,0 +1,11 @@
+.hero {
+	font-family: $main;
+	color: $black;
+	font-size: 8vw;
+	line-height: 1.3em;
+
+	background-image: url("assets/images/heroLeft.png");
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+	background-size: 85% auto;
+}
