@@ -4,7 +4,19 @@
 
 .about h1 {
 	font-family: $accent;
-	font-size: 48px;
+	font-size: 90px;
 	text-transform: uppercase;
 	text-align: center;
+}
+
+.service h2 {
+	font-family: $main;
+	font-size: 60px;
+}
+
+.service p {
+	font-family: $main;
+	font-size: 40px;
+	line-height: 1.2em;
+	letter-spacing: 1px;
 }

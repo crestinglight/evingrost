@@ -3,3 +3,22 @@
 	min-width: 100vw;
 	padding: 40px;
 }
+
+.l-about h1 {
+	margin: 30px 0px 100px;
+}
+
+.l-service {
+	width: calc(80% - 20px);
+	margin: 0px auto 100px;
+	text-align: center;
+}
+
+.l-service h2 {
+	margin-bottom: 40px;
+}
+
+.l-service__icon {
+	max-width: 250px;
+	margin: 0px auto 50px;
+}

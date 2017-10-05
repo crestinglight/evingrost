@@ -59,6 +59,11 @@ a {
 img {
   width: 100%; }
 
+.l-header__wrapper {
+  position: sticky;
+  top: 0;
+  left: 0; }
+
 .l-header--desktop {
   display: none; }
 
@@ -122,10 +127,33 @@ img {
 .l-hero span:nth-child(3) {
   padding-left: 120px; }
 
+.l-work {
+  display: block;
+  min-width: 100vw;
+  padding: 40px; }
+
 .l-about {
   display: block;
   min-width: 100vw;
   padding: 40px; }
+
+.l-about h1 {
+  margin: 30px 0px 100px; }
+
+.l-service {
+  width: calc(80% - 20px);
+  margin: 0px auto 100px;
+  text-align: center; }
+
+.l-service h2 {
+  margin-bottom: 40px; }
+
+.l-service__icon {
+  max-width: 250px;
+  margin: 0px auto 50px; }
+
+body {
+  position: relative; }
 
 .header {
   background-color: #ff354a; }
@@ -150,13 +178,32 @@ img {
   background-position: 100% 100%;
   background-size: 85% auto; }
 
+.work h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 90px;
+  text-transform: uppercase;
+  text-align: center; }
+
 .about {
   background-color: #F2F2F2; }
 
 .about h1 {
   font-family: "Oswald", sans-serif;
-  font-size: 48px;
+  font-size: 90px;
   text-transform: uppercase;
   text-align: center; }
+
+.service h2 {
+  font-family: "Oxygen", sans-serif;
+  font-size: 60px; }
+
+.service p {
+  font-family: "Oxygen", sans-serif;
+  font-size: 40px;
+  line-height: 1.2em;
+  letter-spacing: 1px; }
+
+body {
+  background-color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
