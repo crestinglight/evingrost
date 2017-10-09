@@ -3,3 +3,48 @@
 	min-width: 100vw;
 	padding: 40px;
 }
+
+.l-work h1 {
+	margin: 30px 0px 100px;
+}
+
+.l-work h2 {
+	margin: 30px 20px;
+}
+
+.l-work p {
+	padding: 0px 20px;
+}
+
+.l-work__example {
+	margin-bottom: 100px;
+}
+
+.l-work__more {
+	padding: 40px 0px;
+}
+
+.l-work__more h2 {
+	margin-bottom: 60px;
+}
+
+.l-work__more a {
+	display: inline-block;
+	padding: 30px 50px;
+}
+
+
+@media (hover: hover) {
+
+	.l-work h1 {
+		margin: 0px 0px 75px
+	}
+
+	.l-work__example {
+		margin-bottom: 65px;
+	}
+
+	.l-work__more a {
+		padding: 18px 34px;
+	}
+}

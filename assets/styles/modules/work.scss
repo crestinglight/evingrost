@@ -1,6 +1,52 @@
+.work {
+	text-align: center;
+}
+
 .work h1 {
 	font-family: $accent;
 	font-size: 90px;
 	text-transform: uppercase;
 	text-align: center;
+}
+
+.work h2 {
+	color: $primary;
+	font-family: $accent;
+	font-size: 72px;
+	line-height: 1.1em;
+}
+
+.work p {
+	font-family: $main;
+	font-size: 32px;
+	letter-spacing: 1px;
+	line-height: 1.2em;
+}
+
+.work__more a {
+	font-family: $main;
+	text-transform: uppercase;
+	border: 5px solid $primary;
+	font-size: 60px;
+}
+
+
+@media (hover: hover) {
+
+	.work h1 {
+		font-size: 52px;
+	}
+
+	.work h2 {
+		font-size: 40px;
+	}
+
+	.work p {
+		font-size: 20px;
+	}
+
+	.work__more a {
+		font-size: 30px;
+		border: 3px solid $primary;
+	}
 }

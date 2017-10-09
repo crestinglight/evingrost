@@ -1,0 +1,19 @@
+.footer {
+	background-color: $primary;
+	color: $white;
+	font-family: $accent;
+	text-align: center;
+	font-size: 48px;
+}
+
+.top a {
+	background-color: $black;
+}
+
+
+@media (hover: hover) {
+
+	.footer {
+		font-size: 30px;
+	}
+}

@@ -5,6 +5,9 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Oxygen|Oswald" rel="stylesheet">
 	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+	<script type="text/javascript" src="assets/scripts/mobileMenu.js"></script>
+
 </head>
 <body>
 
@@ -38,7 +41,7 @@
 
 			<div class="burger l-burger">
 
-				<a href="#">
+				<a href="#" class="js-burger">
 					<img src="assets/images/burger.png">
 				</a>
 
@@ -48,22 +51,22 @@
 
 		<div class="navigation l-navigation">
 
-			<ul>
+			<ul class="js-nav">
 				
 				<li>
-					<a href="#">About</a>	
+					<a href="#about" class="js-navLink">About</a>	
 				</li>
 
 				<li>
-					<a href="#">Work</a>	
+					<a href="#work" class="js-navLink">Work</a>	
 				</li>
 
 				<li>
-					<a href="#">Thoughts</a>	
+					<a href="#thoughts" class="js-navLink">Thoughts</a>	
 				</li>
 
 				<li>
-					<a href="#">Contact</a>	
+					<a href="#contact" class="js-navLink">Contact</a>	
 				</li>
 
 			</ul>
@@ -72,7 +75,7 @@
 
 	</div>
 
-	<div class="hero__wrapper l-hero__wrapper">
+	<div class="hero__wrapper l-hero__wrapper" id="top">
 
 		<div class="hero l-hero">
 
@@ -108,7 +111,7 @@
 
 	</div>
 
-	<div class="about l-about">
+	<div class="about l-about" id="about">
 
 		<h1>About</h1>
 
@@ -150,9 +153,137 @@
 
 	</div>
 
-	<div class="work l-work">
+	<div class="work l-work" id="work">
 
 		<h1>Work</h1>
+
+		<div class="work__example l-work__example">
+
+			<img src="assets/images/placeholder/800x600.png">
+
+			<h2>Cerious Tech</h2>
+
+			<p>Morbi condimentum nibh justo, nec finibus nulla finibus quis. Etiam in nibh ex. Phasellus vel luctus urna, id malesuada neque. Vestibulum pharetra tellus a feugiat posuere. Praesent dui sapien, convallis vel justo quis, posuere commodo neque. In faucibus euismod massa, eu mollis ante aliquet ac.</p>
+
+		</div>
+
+		<div class="work__example l-work__example">
+
+			<img src="assets/images/placeholder/800x600.png">
+
+			<h2>Redstone Advertising</h2>
+
+			<p>Sed non enim purus. Nullam lobortis nunc vel fermentum commodo. Suspendisse turpis sapien, aliquet sit amet mi sed, sagittis consectetur felis. Cras lacinia a urna vitae dapibus. Sed elementum non ante nec dapibus. Proin vestibulum, tellus id faucibus placerat, sapien eros aliquam mauris, in faucibus ex enim vitae nisi.</p>
+
+		</div>
+
+		<div class="work__example l-work__example">
+
+			<img src="assets/images/placeholder/800x600.png">
+
+			<h2>Dyer Law Blog</h2>
+
+			<p>Quisque eget dolor erat. Nunc congue odio sed arcu laoreet, at vulputate nibh sollicitudin. Maecenas molestie commodo lorem at condimentum. Nunc nec justo nec lorem aliquam tristique vel quis nisi. Integer quis finibus est. Aliquam euismod, orci ultrices faucibus posuere, leo dui venenatis nibh, vitae ultrices felis est quis purus. Morbi interdum dignissim ultricies. Aliquam eget magna suscipit, dignissim eros et, mollis mauris.</p>
+
+		</div>
+
+		<div class="work__more l-work__more">
+
+			<h2>Want to see more examples of my work?</h2>
+
+			<a href="mailto:evin.grost@gmail.com">Email me</a>
+
+		</div>
+
+	</div>
+
+	<div class="thoughts l-thoughts" id="thoughts">
+
+		<h1>Thoughts</h1>
+
+		<a href="#" class="blog__post l-blog__post">
+
+			<img src="assets/images/placeholder/800x600.png">
+
+			<h2>Blog Title</h2>
+
+			<p>Blog Excerpt Quisque eget dolor erat. Nunc congue odio sed arcu laoreet, at vulputate nibh sollicitudin. Maecenas molestie commodo lorem at condimentum. Nunc nec justo nec lorem aliquam tristique vel quis nisi. Integer quis finibus est.</p>
+
+		</a>
+
+		<a href="#" class="blog__post l-blog__post">
+
+			<img src="assets/images/placeholder/800x600.png">
+
+			<h2>Blog Title</h2>
+
+			<p>Blog Excerpt Quisque eget dolor erat. Nunc congue odio sed arcu laoreet, at vulputate nibh sollicitudin. Maecenas molestie commodo lorem at condimentum. Nunc nec justo nec lorem aliquam tristique vel quis nisi. Integer quis finibus est.</p>
+
+		</a>
+
+		<a href="#" class="blog__post l-blog__post">
+
+			<img src="assets/images/placeholder/800x600.png">
+
+			<h2>Blog Title</h2>
+
+			<p>Blog Excerpt Quisque eget dolor erat. Nunc congue odio sed arcu laoreet, at vulputate nibh sollicitudin. Maecenas molestie commodo lorem at condimentum. Nunc nec justo nec lorem aliquam tristique vel quis nisi. Integer quis finibus est.</p>
+
+		</a>
+
+	</div>
+
+	<div class="contact l-contact" id="contact">
+
+		<h1>Contact</h1>
+
+		<p>Have a question or an awesome idea for a new project? Shoot me a message, I'd love to help you get started, or just to chat.</p>
+
+		<form action="https://formspree.io/your@email.com" method="POST">
+
+			<input type="hidden" name="_subject" value="Personal Site Contact Form" />
+
+			<input type="hidden" name="_next" value="thanks.html" />
+
+			<div class="contact__input l-contact__input">
+				<label for="name">Name*: </label>
+		    	<input type="text" name="name" required>
+			</div>
+
+			<div class="contact__input l-contact__input">
+			    <label for="email">Email*: </label>
+			    <input type="email" name="_replyto" required>
+		    </div>
+
+		    <div class="contact__input l-contact__input">
+			    <label for="message">Message*: </label>
+			    <textarea name="message" rows="4" required></textarea>
+		    </div>
+
+		    <input type="submit" value="Send">
+		</form>
+
+	</div>
+
+	<div class="footer l-footer">
+
+		<div class="top l-top">
+
+			<a href="#top">
+
+				<svg height="70" width="50">
+
+					<path d="M0 30 L15 30 L25 20 L35 30 L50 30 L25 0 Z" fill="white" stroke="white" />
+
+					<path d="M0 65 L15 65 L25 55 L35 65 L50 65 L25 35 Z" fill="white" stroke="white" />
+
+				</svg>
+
+			</a>
+
+		</div>
+
+		<p>&copy; Evin Grost 2017</p>
 
 	</div>
 

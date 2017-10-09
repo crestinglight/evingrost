@@ -2,6 +2,7 @@
 	position: sticky;
 	top: 0;
 	left: 0;
+	min-width: 100vw;
 }
 
 .l-header--desktop {
@@ -41,8 +42,6 @@
 
 .l-navigation {
 	position: relative;
-	overflow: hidden;
-	max-height: 0px;
 }
 
 .l-navigation ul {
@@ -50,10 +49,49 @@
 	top: -1px;
 	right: 0;
 	z-index: 2;
-	padding-bottom: 30px;
+
+	overflow: hidden;
+	max-height: 0px;
 }
 
 .l-navigation ul li a {
 	display: block;
 	padding: 20px 60px 20px 40px;
+}
+
+.l-navigation ul li:last-child a {
+	padding-bottom: 50px;
+}
+
+
+@media (hover: hover) {
+
+	.l-header--mobile {
+		padding: 15px 25px;
+	}
+
+	.l-logo {
+		max-width: 65px;
+	}
+
+	.l-burger {
+		max-width: 70px;
+	}
+
+	.l-burger a {
+		padding: 15px;
+	}
+
+	.l-socials a {
+		max-width: 50px;
+		padding: 10px;
+	}
+
+	.l-navigation ul li a {
+		padding: 15px 60px 15px 40px;
+	}
+
+	.l-navigation ul li:last-child a {
+		padding-bottom: 35px;
+	}
 }

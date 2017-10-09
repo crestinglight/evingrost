@@ -1,0 +1,68 @@
+.contact {
+	text-align: center;
+}
+
+.contact h1 {
+	font-family: $accent;
+	font-size: 90px;
+	text-transform: uppercase;
+}
+
+.contact p {
+	font-family: $main;
+	line-height: 1.2em;
+	font-size: 24px;
+}
+
+.contact label {
+	font-family: $accent;
+	font-size: 54px;
+	font-style: italic;
+}
+
+.contact input,
+.contact textarea {
+	font-size: 45px;
+	font-family: $main;
+	border: none;
+	border-bottom: 3px solid $primary;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+	outline: none;
+}
+
+.contact input[type="submit"]{
+	font-size: 60px;
+	background-color: transparent;
+	text-transform: uppercase;
+	border: 5px solid $primary;
+}
+
+
+@media (hover: hover) {
+
+	.contact h1 {
+		font-size: 52px;
+	}
+
+	.contact p {
+		font-size: 20px;
+	}
+
+	.contact label {
+		font-size: 30px;
+	}
+
+	.contact input,
+	.contact textarea {
+		font-size: 24px;
+		border-bottom: 2px solid $primary;
+	}
+
+	.contact input[type="submit"] {
+		font-size: 30px;
+		border: 3px solid $primary;
+	}
+}
