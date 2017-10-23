@@ -23,6 +23,28 @@
 	margin: 0px auto 50px;
 }
 
+.l-about__image {
+	padding: 60px;
+}
+
+.l-about__me {
+	width: calc(80% - 20px);
+	margin: 0px auto 100px;
+}
+
+.l-about__me h2 {
+	margin-bottom: 40px;
+}
+
+.l-about__me p {
+	margin-bottom: 40px;
+}
+
+.l-about__me a.about__contact {
+	display: inline-block;
+	padding: 20px 40px;
+}
+
 
 @media (hover: hover) {
 
@@ -33,5 +55,80 @@
 	.l-service__icon {
 		max-width: 135px;
 		margin: 0px auto 33px;
+	}
+}
+
+@media (min-width: 750px), (hover: none) {
+
+	.l-services {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.l-service {
+		width: calc(50% - 40px);
+	}
+
+	.l-service__icon {
+		max-width: 200px;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.l-about {
+		padding: 70px 40px;
+	}
+
+	.l-services {
+		max-width: 1000px;
+		margin: 0px auto;
+	}
+
+	.l-service {
+		width: calc(33.333% - 80px);
+		margin: 0px auto 50px;
+	}
+
+	.l-service h2 {
+		margin-bottom: 24px;
+	}
+
+	.l-service__icon {
+		max-width: 100px;
+		margin: 0px auto 20px
+	}
+
+	.l-about__me {
+		max-width: 750px;
+		margin: 0px auto;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	.l-about__me a {
+		margin: 0px auto;
+	}
+
+	.l-about__me h2 {
+		margin-bottom: 20px;
+	}
+
+	.l-about__image {
+		padding: 0px;
+		max-width: 33.333%;
+		display: inline-block;
+	}
+
+	.l-about__description {
+		max-width: calc(66% - 30px);
+		margin-top: 20px;
+		margin-left: 30px;
+	}
+
+	.l-about__me a.about__contact {
+		padding: 15px 35px;
+		margin-top: 35px;
 	}
 }

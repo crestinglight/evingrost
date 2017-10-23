@@ -36,7 +36,7 @@
 }
 
 .l-contact input[type="submit"]{
-	padding: 30px 50px;
+	padding: 30px 80px;
 }
 
 
@@ -52,5 +52,30 @@
 
 	.l-contact input[type="submit"] {
 		padding: 18px 34px;
+	}
+}
+
+@media (min-width: 750px) and (hover: none) {
+
+	.l-contact input[type="submit"] {
+		padding: 20px 60px;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.l-contact {
+		padding: 70px 40px;
+	}
+
+	.l-contact form {
+		max-width: 800px;
+		margin: 0px auto;
+	}
+
+	.l-contact input[type="submit"] {
+		padding: 15px 35px;
+		margin: 0px auto;
+		margin-top: 10px;
 	}
 }

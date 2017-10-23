@@ -10,14 +10,22 @@
 	text-align: center;
 	min-width: 100vw;
 	position: absolute;
-	top: -29%;
+	top: -38%;
 	left: 0;
 	z-index: 2;
 }
 
 .l-top a {
 	display: inline-block;
-	padding: 30px;
+	padding: 50px 30px;
+}
+
+.l-top--mobile {
+	display: block;
+}
+
+.l-top--desktop {
+	display: none;
 }
 
 
@@ -25,5 +33,24 @@
 
 	.l-top a {
 		padding: 20px;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.l-top--mobile {
+		display: none;
+	}
+
+	.l-top--desktop {
+		display: block;
+	}
+
+	.l-top {
+		top: -20%;
+	}
+
+	.l-top a {
+		padding: 25px 15px;
 	}
 }

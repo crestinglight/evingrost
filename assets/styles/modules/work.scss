@@ -16,18 +16,40 @@
 	line-height: 1.1em;
 }
 
+.work h3 {
+	color: $gray;
+	font-family: $accent;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 18px;
+	line-height: 60px;
+	text-align: left;
+
+	background-image: url("assets/images/icon_arrow.png");
+	background-repeat: no-repeat;
+	background-size: 55px auto;
+	background-position: 0px 2px;
+}
+
 .work p {
 	font-family: $main;
 	font-size: 32px;
 	letter-spacing: 1px;
-	line-height: 1.2em;
+	line-height: 1.4em;
+}
+
+.work a {
+	font-family: $accent;
+	text-transform: uppercase;
+	font-size: 64px;
+	color: $primary;
+	border: 5px solid $primary;
+	border-radius: 100px;
 }
 
 .work__more a {
 	font-family: $main;
-	text-transform: uppercase;
-	border: 5px solid $primary;
-	font-size: 60px;
 }
 
 
@@ -48,5 +70,51 @@
 	.work__more a {
 		font-size: 30px;
 		border: 3px solid $primary;
+	}
+}
+
+@media (min-width: 750px) and (hover: none) {
+
+	.work h2 {
+		font-size: 55px;
+	}
+
+	.work h3 {
+		font-size: 30px;
+		line-height: 1.3em;
+	}
+
+	.work a {
+		font-size: 45px;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.work h3 {
+		font-size: 18px;
+		line-height: 1.4em;
+
+		background-size: 25px auto;
+		background-position: 15px 0px;
+	}
+
+	.work p {
+		font-size: 14px;
+	}
+
+	.work a {
+		font-size: 26px;
+		border: 3px solid $primary;
+		box-shadow: 0px 0px 0px 3px $white;
+		-webkit-font-smoothing: antialiased;
+		transition: all 0.3s ease;
+	}
+
+	.work a:hover {
+		background-color: $primary;
+		color: $white;
+		border: 3px solid $white;
+		box-shadow: 0px 0px 0px 3px $black;
 	}
 }

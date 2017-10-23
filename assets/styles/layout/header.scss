@@ -49,6 +49,7 @@
 	top: -1px;
 	right: 0;
 	z-index: 2;
+	min-width: 100vw;
 
 	overflow: hidden;
 	max-height: 0px;
@@ -56,11 +57,11 @@
 
 .l-navigation ul li a {
 	display: block;
-	padding: 20px 60px 20px 40px;
+	padding: 35px;
 }
 
 .l-navigation ul li:last-child a {
-	padding-bottom: 50px;
+	padding-bottom: 70px;
 }
 
 
@@ -93,5 +94,86 @@
 
 	.l-navigation ul li:last-child a {
 		padding-bottom: 35px;
+	}
+}
+
+@media (min-width: 750px) and (hover: none) {
+
+	.l-logo {
+		max-width: 100px;
+	}
+
+	.l-socials a {
+		max-width: 95px;
+	}
+
+	.l-burger {
+		max-width: 120px;
+	}
+
+	.l-burger a {
+		padding: 20px;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.l-header__wrapper--mobile {
+		display: none;
+	}
+
+	.l-header--desktop {
+		display: inline-block;
+		flex-grow: 1;
+		padding: 30px 35px;
+	}
+
+	.l-logo {
+		max-width: 100px;
+		margin-bottom: 30px;
+	}
+
+	.l-navigation ul {
+		position: static;
+		overflow: visible;
+		max-height: none;
+		min-width: 100%;
+	}
+
+	.l-navigation ul li a {
+		padding: 10px 0px;
+	}
+
+	.l-socials {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.l-socials a {
+		max-width: 65px;
+	}
+}
+
+@media (min-width: 1200px) {
+
+	.l-logo {
+		margin-left: 15px;
+	}
+
+	.l-navigation {
+		margin-left: 15px;
+	}
+
+	.l-socials {
+		justify-content: center;
+	}
+
+	.l-socials a {
+		max-width: 75px;
+		margin: 10px 10px;
+	}
+
+	.l-header--desktop {
+		max-width: 400px;
 	}
 }

@@ -1,0 +1,50 @@
+.title {
+	background-color: $secondary;
+	font-family: $accent;
+	text-transform: uppercase;
+	font-size: 90px;
+	text-align: center;
+}
+
+.blog__posts {
+	background-color: $secondary;
+}
+
+.category {
+	font-size: 40px;
+	font-family: $accent;
+	text-transform: uppercase;
+	background-color: $white;
+	border-radius: 75px;
+
+	background-image: url("assets/images/categoryBullet.png");
+	background-repeat: no-repeat;
+	background-size: 50px auto;
+	background-position: 10px 50%;
+}
+
+.post__summary {
+	background-color: $white;
+	color: $black;
+}
+
+.post__summary h1 {
+	font-family: $accent;
+	text-transform: uppercase;
+	font-size: 40px;
+}
+
+.post__summary span {
+	font-family: $main;
+	font-size: 14px;
+	font-style: italic;
+	color: $gray;
+}
+
+.post__summary p {
+	font-family: $main;
+	font-size: 18px;
+	color: $black;
+	letter-spacing: 1px;
+	line-height: 1.4em;
+}

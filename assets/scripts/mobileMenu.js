@@ -26,7 +26,7 @@ window.addEventListener("load", function(){
 	}
 
 	function openMenu(menu){
-		menu.style.maxHeight = "600px";
+		menu.style.maxHeight = "800px";
 	}
 
 	function closeMenu(menu){

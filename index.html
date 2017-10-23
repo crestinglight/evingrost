@@ -11,7 +11,7 @@
 </head>
 <body>
 
-	<div class="l-header__wrapper">
+	<div class="l-header__wrapper l-header__wrapper--mobile">
 
 		<div class="header header--mobile l-header--mobile">
 
@@ -25,8 +25,8 @@
 
 			<div class="socials l-socials">
 
-				<a href="#">
-					<img src="assets/images/facebook.png">
+				<a href="mailto:evin.grost@gmail.com">
+					<img src="assets/images/email.png">
 				</a>
 
 				<a href="#">
@@ -101,9 +101,41 @@
 
 			<div class="navigation l-navigation">
 
+				<ul>
+					
+					<li>
+						<a href="#about">About</a>	
+					</li>
+
+					<li>
+						<a href="#work">Work</a>	
+					</li>
+
+					<li>
+						<a href="#thoughts">Thoughts</a>	
+					</li>
+
+					<li>
+						<a href="#contact">Contact</a>	
+					</li>
+
+				</ul>
+
 			</div>
 
 			<div class="socials l-socials">
+
+				<a href="mailto:evin.grost@gmail.com">
+					<img src="assets/images/email.png">
+				</a>
+
+				<a href="#">
+					<img src="assets/images/twitter.png">
+				</a>
+
+				<a href="#">
+					<img src="assets/images/linkedin.png">
+				</a>
 
 			</div>
 
@@ -115,39 +147,61 @@
 
 		<h1>About</h1>
 
-		<div class="service l-service">
+		<div class="l-services">
 
-			<div class="service__icon l-service__icon">
-				<img src="assets/images/icon_Design.png">
+			<div class="service l-service">
+
+				<div class="service__icon l-service__icon">
+					<img src="assets/images/icon_Design.png">
+				</div>
+
+				<h2>Design</h2>
+
+				<p>Stand out from the crowd with a beautiful, distinctive design that'll draw eyeballs from all over the web.</p>
+
 			</div>
 
-			<h2>Design</h2>
+			<div class="service l-service">
 
-			<p>Need a unique perspective that'll make you stand out from the crowd? I collaborate with clients to create beautiful, distinctive designs that draw eyeballs from all over the web.</p>
+				<div class="service__icon l-service__icon">
+					<img src="assets/images/icon_UI.png">
+				</div>
+
+				<h2>User Experience</h2>
+
+				<p>From satisfying clickables to animated menus, together we can create an experience that your users will love to interact with.</p>
+
+			</div>
+
+			<div class="service l-service">
+
+				<div class="service__icon l-service__icon">
+					<img src="assets/images/icon_Code.png">
+				</div>
+
+				<h2>Code</h2>
+
+				<p>Database management and server-side code are essential. No matter your goals, your site should just work.</p>
+
+			</div>
 
 		</div>
 
-		<div class="service l-service">
+		<div class="about__me l-about__me">
 
-			<div class="service__icon l-service__icon">
-				<img src="assets/images/icon_UI.png">
+			<div class="l-about__image">
+				<img src="assets/images/me.png">
 			</div>
 
-			<h2>User Experience</h2>
+			<div class="l-about__description">
 
-			<p>From satisfying clickables to animated menus, together we can create an experience that your users will love to interact with. Intuitive features, comfortable UI patterns, and simple useability, I believe it's the little things that make a real difference.</p>
+				<h2>Who is this?</h2>
 
-		</div>
+				<p>I am the full-stack web developer at <a href="http://www.redstoneweb.com/" target="_blank">Redstone Advertising</a> in Omaha, Nebraska. From creative design to front-end UI/UX design and back-end development, I love every piece of the web development process. Have an interesting project idea or just want to chat?</p>
 
-		<div class="service l-service">
-
-			<div class="service__icon l-service__icon">
-				<img src="assets/images/icon_Code.png">
 			</div>
 
-			<h2>Code</h2>
-
-			<p>Database management and server-side code are often the most essential aspect to any website. No matter your goals, your site should just work. From our front-end basics like HTML, SASS, and JavaScript, all the way down to our heavy back-end PHP and Ruby, I can handle it.</p>
+			<a href="#contact" class="about__contact">Contact me</a>
 
 		</div>
 
@@ -159,39 +213,72 @@
 
 		<div class="work__example l-work__example">
 
-			<img src="assets/images/placeholder/800x600.png">
+			<div class="l-work__image">
+				<img src="assets/images/responsive/lincolnCalling.png">
+			</div>
 
-			<h2>Cerious Tech</h2>
+			<div class="l-work__description">
 
-			<p>Morbi condimentum nibh justo, nec finibus nulla finibus quis. Etiam in nibh ex. Phasellus vel luctus urna, id malesuada neque. Vestibulum pharetra tellus a feugiat posuere. Praesent dui sapien, convallis vel justo quis, posuere commodo neque. In faucibus euismod massa, eu mollis ante aliquet ac.</p>
+				<h2>Lincoln Calling</h2>
+				<h3>Full stack implementation, Wordpress custom theme development</h3>
+
+				<p>Lincoln Calling is an annual, non-profit music festival focusing on emerging artists and occurring across multiple indoor/outdoor venues in downtown Lincoln, Nebraska. In its first year operated by the nonprofit Hear Nebraska, the 2016 Lincoln Calling featured 120 bands and comedians across eight venues, drawing more than 6,000 music lovers to downtown Lincoln.</p>
+
+			</div>
+
+			<a href="http://lincolncalling.com/" target="_blank">Visit Site</a>
 
 		</div>
+
+		<hr>
+
+		<div class="work__example l-work__example l-work--reverse">
+
+			<div class="l-work__image">
+				<img src="assets/images/responsive/redstone.png">
+			</div>
+
+			<div class="l-work__description">
+
+				<h2>Redstone Advertising</h2>
+				<h3>Full stack implementation, Wordpress custom theme development</h3>
+
+				<p>Redstone is a marketing and communications firm. They drive sales and brand preference with integrated solutions across the dimensions of audience, message and channel.</p>
+
+			</div>
+
+			<a href="https://www.redstoneweb.com/" target="_blank">Visit Site</a>
+
+		</div>
+
+		<hr>
 
 		<div class="work__example l-work__example">
 
-			<img src="assets/images/placeholder/800x600.png">
+			<div class="l-work__image">
+				<img src="assets/images/responsive/cerious.png">
+			</div>
 
-			<h2>Redstone Advertising</h2>
+			<div class="l-work__description">
 
-			<p>Sed non enim purus. Nullam lobortis nunc vel fermentum commodo. Suspendisse turpis sapien, aliquet sit amet mi sed, sagittis consectetur felis. Cras lacinia a urna vitae dapibus. Sed elementum non ante nec dapibus. Proin vestibulum, tellus id faucibus placerat, sapien eros aliquam mauris, in faucibus ex enim vitae nisi.</p>
+				<h2>Cerious Technologies</h2>
+				<h3>Design, UI/UX design, Full stack implementation</h3>
+
+				<p>Cerious Technologies is a leader in the audio equipment community, focused on never-before-heard quality at an affordable price. Each of their cables are handmade and filled with the highest grade synthetic materials.</p>
+
+			</div>
+
+			<a href="http://lincolncalling.com/" target="_blank">Visit Site</a>
 
 		</div>
 
-		<div class="work__example l-work__example">
-
-			<img src="assets/images/placeholder/800x600.png">
-
-			<h2>Dyer Law Blog</h2>
-
-			<p>Quisque eget dolor erat. Nunc congue odio sed arcu laoreet, at vulputate nibh sollicitudin. Maecenas molestie commodo lorem at condimentum. Nunc nec justo nec lorem aliquam tristique vel quis nisi. Integer quis finibus est. Aliquam euismod, orci ultrices faucibus posuere, leo dui venenatis nibh, vitae ultrices felis est quis purus. Morbi interdum dignissim ultricies. Aliquam eget magna suscipit, dignissim eros et, mollis mauris.</p>
-
-		</div>
+		<hr>
 
 		<div class="work__more l-work__more">
 
 			<h2>Want to see more examples of my work?</h2>
 
-			<a href="mailto:evin.grost@gmail.com">Email me</a>
+			<a href="mailto:evin.grost@gmail.com" target="_blank">Email me</a>
 
 		</div>
 
@@ -201,35 +288,43 @@
 
 		<h1>Thoughts</h1>
 
-		<a href="#" class="blog__post l-blog__post">
+		<div class="blogs l-blogs">
 
-			<img src="assets/images/placeholder/800x600.png">
+			<a href="#" class="blog__post l-blog__post">
 
-			<h2>Blog Title</h2>
+				<img src="assets/images/placeholder/800x600.png">
 
-			<p>Blog Excerpt Quisque eget dolor erat. Nunc congue odio sed arcu laoreet, at vulputate nibh sollicitudin. Maecenas molestie commodo lorem at condimentum. Nunc nec justo nec lorem aliquam tristique vel quis nisi. Integer quis finibus est.</p>
+				<h2>Blog Title</h2>
 
-		</a>
+				<p>Blog Excerpt Quisque eget dolor erat. Nunc congue odio sed arcu laoreet, at vulputate nibh sollicitudin. Maecenas molestie commodo lorem at condimentum. Nunc nec justo nec lorem aliquam tristique vel quis nisi. Integer quis finibus est.</p>
 
-		<a href="#" class="blog__post l-blog__post">
+			</a>
 
-			<img src="assets/images/placeholder/800x600.png">
+			<a href="#" class="blog__post l-blog__post">
 
-			<h2>Blog Title</h2>
+				<img src="assets/images/placeholder/800x600.png">
 
-			<p>Blog Excerpt Quisque eget dolor erat. Nunc congue odio sed arcu laoreet, at vulputate nibh sollicitudin. Maecenas molestie commodo lorem at condimentum. Nunc nec justo nec lorem aliquam tristique vel quis nisi. Integer quis finibus est.</p>
+				<h2>Blog Title</h2>
 
-		</a>
+				<p>Blog Excerpt Quisque eget dolor erat. Nunc congue odio sed arcu laoreet, at vulputate nibh sollicitudin. Maecenas molestie commodo lorem at condimentum. Nunc nec justo nec lorem aliquam tristique vel quis nisi. Integer quis finibus est.</p>
 
-		<a href="#" class="blog__post l-blog__post">
+			</a>
 
-			<img src="assets/images/placeholder/800x600.png">
+			<a href="#" class="blog__post l-blog__post">
 
-			<h2>Blog Title</h2>
+				<img src="assets/images/placeholder/800x600.png">
 
-			<p>Blog Excerpt Quisque eget dolor erat. Nunc congue odio sed arcu laoreet, at vulputate nibh sollicitudin. Maecenas molestie commodo lorem at condimentum. Nunc nec justo nec lorem aliquam tristique vel quis nisi. Integer quis finibus est.</p>
+				<h2>Blog Title</h2>
 
-		</a>
+				<p>Blog Excerpt Quisque eget dolor erat. Nunc congue odio sed arcu laoreet, at vulputate nibh sollicitudin. Maecenas molestie commodo lorem at condimentum. Nunc nec justo nec lorem aliquam tristique vel quis nisi. Integer quis finibus est.</p>
+
+			</a>
+
+		</div>
+
+		<div class="blog__all l-blog__all">
+			<a href="#">View more</a>
+		</div>
 
 	</div>
 
@@ -271,11 +366,19 @@
 
 			<a href="#top">
 
-				<svg height="70" width="50">
+				<svg height="70" width="50" class="l-top--mobile">
 
 					<path d="M0 30 L15 30 L25 20 L35 30 L50 30 L25 0 Z" fill="white" stroke="white" />
 
 					<path d="M0 65 L15 65 L25 55 L35 65 L50 65 L25 35 Z" fill="white" stroke="white" />
+
+				</svg>
+
+				<svg height="35" width="32" class="l-top--desktop">
+
+					<path d="M0 15 L10 15 L15 10 L20 15 L30 15 L15 0 Z" fill="white" stroke="white" />
+
+					<path d="M0 35 L10 35 L15 30 L20 35 L30 35 L15 20 Z" fill="white" stroke="white" />
 
 				</svg>
 

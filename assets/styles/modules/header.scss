@@ -12,6 +12,7 @@
 .navigation ul {
 	font-size: 80px;
 	background-color: $primary;
+	text-align: center;
 
 	transition: 0.3s all ease-out;
 }
@@ -21,5 +22,28 @@
 
 	.navigation ul {
 		font-size: 40px;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.header--desktop {
+		background-image: url("assets/images/heroRight.png");
+		background-repeat: no-repeat;
+		background-position: 0px 100%;
+		background-size: 260px auto;
+	}
+
+	.navigation ul {
+		text-align: left;
+		font-size: 48px;
+		background-color: transparent;
+	}
+}
+
+@media (min-width: 1200px) {
+
+	.header--desktop {
+		background-size: 276px auto;
 	}
 }

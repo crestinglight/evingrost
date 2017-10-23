@@ -1,0 +1,37 @@
+.l-title {
+	display: block;
+	padding: 70px 30px;
+}
+
+.l-blog__posts {
+	padding: 40px;
+}
+
+.l-post__image {
+	position: relative;
+}
+
+.l-post__image img {
+	display: block;
+}
+
+.l-category {
+	position: absolute;
+	bottom: 40px;
+	left: 40px;
+	padding: 13px 20px 15px 70px;
+}
+
+.l-post__summary {
+	display: block;
+	padding: 30px;
+}
+
+.l-post__summary h1 {
+	padding-bottom: 20px;
+}
+
+.l-post__summary span {
+	display: block;
+	margin-bottom: 12px;
+}
