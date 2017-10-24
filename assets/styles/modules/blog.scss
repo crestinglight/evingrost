@@ -29,6 +29,7 @@
 }
 
 .post__summary h1 {
+	color: $primary;
 	font-family: $accent;
 	text-transform: uppercase;
 	font-size: 40px;
@@ -45,6 +46,6 @@
 	font-family: $main;
 	font-size: 18px;
 	color: $black;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
 	line-height: 1.4em;
 }
