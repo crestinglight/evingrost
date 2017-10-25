@@ -5,12 +5,20 @@
 	position: relative;
 }
 
+.l-footer p {
+	margin-top: 20px;
+}
+
+.l-footer .l-socials a {
+	max-width: 125px;
+}
+
 .l-top {
 	display: block;
 	text-align: center;
 	min-width: 100vw;
 	position: absolute;
-	top: -38%;
+	top: -22%;
 	left: 0;
 	z-index: 2;
 }
@@ -46,11 +54,20 @@
 		display: block;
 	}
 
-	.l-top {
-		top: -20%;
-	}
-
 	.l-top a {
 		padding: 25px 15px;
+	}
+
+	.l-footer {
+		padding: 45px 20px 40px;
+		margin-top: 0px;
+	}
+
+	.l-footer .l-socials a {
+		max-width: 60px;
+	}
+
+	.l-footer p {
+		margin-top: 0px;
 	}
 }

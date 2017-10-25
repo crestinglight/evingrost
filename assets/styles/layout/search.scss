@@ -12,7 +12,7 @@
 
 .l-search input[type="text"] {
 	display: inline-block;
-	padding: 10px 20px;
+	padding: 10px 20px 10px 44px;
 	width: 80px;
 }
 
@@ -35,4 +35,31 @@
 
 .l-search input[type="text"]:focus:-moz-placeholder { /* Firefox 18- */
   color: $gray;
+}
+
+
+@media (min-width: 1024px){
+
+	.l-search {
+		display: inline-block;
+		min-width: 33%;
+		text-align: right;
+	}
+
+	.l-search input[type="text"] {
+		width: 42px;
+		padding: 6px;
+	}
+
+	.l-search input[type="text"]:focus {
+		padding-left: 22px;
+		width: 250px;
+	}
+}
+
+@media (min-width: 1200px){
+
+	.l-search input[type="text"]:focus {
+		width: 300px;
+	}
 }

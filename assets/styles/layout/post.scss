@@ -1,0 +1,33 @@
+.l-post__image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-height: 600px;
+	overflow: hidden;
+	position: relative;
+}
+
+.l-post__content {
+	padding: 40px;
+}
+
+.l-post__content h1 {
+	margin: 20px 0px;
+}
+
+.l-post__content h2 {
+	margin-bottom: 40px;
+}
+
+.l-post__content p {
+	margin-bottom: 40px;
+}
+
+
+@media (min-width: 1024px){
+
+	.l-post__content {
+		max-width: 1000px;
+		margin: 0px auto;
+	}
+}

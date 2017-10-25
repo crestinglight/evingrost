@@ -54,11 +54,23 @@
 		min-height: 830px;
 	}
 
+	.l-hero.l-hero--blog {
+		min-width: 100vw;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 70px 40px 100px;
+	}
+
 	.l-hero {
 		display: inline-flex;
 		justify-content: center;
 		align-items: center;
 		min-width: 70vw;
+	}
+
+	.l-hero.l-hero--blog h1 {
+		margin: 0px;
 	}
 
 	.l-hero h1 {

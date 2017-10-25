@@ -34,6 +34,14 @@
 		background-size: 260px auto;
 	}
 
+	.header__blog--desktop {
+		background-color: $primary;
+	}
+
+	.navigation.navigation--blog ul {
+		font-size: 24px;
+	}
+
 	.navigation ul {
 		text-align: left;
 		font-size: 48px;
