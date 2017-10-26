@@ -1,0 +1,154 @@
+.blog h1 {
+	background-color: $secondary;
+	font-family: $accent;
+	text-transform: uppercase;
+	font-size: 90px;
+	text-align: center;
+}
+
+.blog {
+	background-color: $secondary;
+}
+
+.post {
+	background-color: $white;
+}
+
+.category {
+	font-size: 40px;
+	font-family: $accent;
+	text-transform: uppercase;
+	background-color: $white;
+	border-radius: 75px;
+
+	background-image: url("assets/images/categoryBullet.png");
+	background-repeat: no-repeat;
+	background-size: 50px auto;
+	background-position: 10px 50%;
+}
+
+.post__summary {
+	background-color: $white;
+	color: $black;
+}
+
+.post__summary h1 {
+	color: $primary;
+	font-family: $accent;
+	text-transform: uppercase;
+	font-size: 40px;
+	background-color: transparent;
+}
+
+.post__summary span {
+	font-family: $main;
+	font-size: 14px;
+	font-style: italic;
+	color: $gray;
+}
+
+.post__summary p {
+	font-family: $main;
+	font-size: 18px;
+	color: $black;
+	letter-spacing: 2px;
+	line-height: 1.4em;
+}
+
+.read__more a {
+	font-family: $accent;;
+	font-size: 50px;
+	text-transform: uppercase;
+	color: $primary;
+	border: 5px solid $primary;
+	border-radius: 100px;
+}
+
+
+@media (min-width: 1024px){
+
+	.blog h1 {
+		font-size: 52px;
+	}
+
+	.blog__posts h1 {
+		text-align: left;
+	}
+
+	.post--featured {
+		background-color: $white;
+	}
+
+	.post--featured .post__title h1 {
+		font-size: 35px;
+	}
+
+	.category {
+		font-size: 16px;
+
+		background-size: 28px auto;
+		background-position: 5px 50%;
+	}
+
+	.post--featured .category {
+		font-size: 20px;
+
+		background-size: 34px auto;
+		background-position: 5px 50%;
+	}
+
+	.post .post__title h1 {
+		font-size: 24px;
+		line-height: 1.2em;
+		background-color: transparent;
+	}
+
+	.post--featured .post__title h1 {
+		font-size: 32px;
+	}
+
+	.post--smaller .post__title h1 {
+		font-size: 20px;
+	}
+
+	.post__summary span {
+		font-size: 12px;
+	}
+
+	.post--featured .post__summary span {
+		font-size: 14px;
+	}
+
+	.post__excerpt p {
+		font-size: 14px;
+		letter-spacing: 0.8px;
+	}
+
+	.post--featured .post__excerpt p {
+		font-size: 18px;
+		letter-spacing: 0.8px;
+	}
+
+	.read__more a {
+		font-size: 20px;
+		border: 3px solid $primary;
+		box-shadow: 0px 0px 0px 3px $white;
+		-webkit-font-smoothing: antialiased;
+		transition: all 0.3s ease;
+	}
+
+	.read__more--featured a {
+		font-size: 32px;
+	}
+
+	.read__more--smaller a {
+		font-size: 14px;
+	}
+
+	.read__more a:hover {
+		background-color: $primary;
+		color: $white;
+		border: 3px solid $white;
+		box-shadow: 0px 0px 0px 3px $black;
+	}
+}

@@ -1,0 +1,163 @@
+.l-blog h1 {
+	display: block;
+	padding: 70px 30px 40px;
+}
+
+.l-blog__posts {
+	padding: 40px;
+}
+
+.l-post {
+	margin-bottom: 40px;
+}
+
+.l-post__image {
+	position: relative;
+}
+
+.l-post__image img {
+	display: block;
+}
+
+.l-category {
+	position: absolute;
+	bottom: 40px;
+	left: 40px;
+	padding: 13px 20px 15px 70px;
+}
+
+.l-post__summary {
+	display: block;
+	padding: 30px;
+}
+
+.l-post__summary span {
+	display: block;
+	margin-bottom: 12px;
+}
+
+.l-read__more {
+	text-align: center;
+}
+
+.l-read__more a {
+	display: inline-block;
+	padding: 30px 50px;
+	margin-bottom: 60px;
+}
+
+
+@media (min-width: 1024px){
+
+	.l-blog {
+		padding: 70px 40px 75px;
+	}
+
+	.l-blog h1 {
+		padding: 0px;
+		margin-bottom: 70px;
+	}
+
+	.l-feature__block {
+		width: 100%;
+	}
+
+	.l-post__title h1 {
+		padding: 0px 0px 5px;
+	}
+
+	.l-post--featured .l-post__title h1 {
+		padding: 10px 0px;
+	}
+
+	.l-post__summary span {
+		margin-bottom: 5px;
+	}
+
+	.l-post--featured .l-post__summary span {
+		margin-bottom: 10px;
+	}
+
+	.l-blog__wrapper {
+		max-width: 1000px;
+		margin: 0px auto;
+	}
+
+	.l-blog__posts {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		padding: 0px;
+	}
+
+	.l-blog__posts h1 {
+		margin-bottom: 10px;
+	}
+
+	.l-post--featured {
+		min-width: calc(66.666% - 10px);
+		float: left;
+	}
+
+	.l-post--featured .l-category {
+		bottom: 30px;
+		left: 30px;
+		padding: 10px 10px 13px 45px;
+	}
+
+	.l-category {
+		bottom: 15px;
+		left: 15px;
+		padding: 9px 9px 10px 38px;
+	}
+
+	.l-post {
+		display: inline-flex;
+		flex-direction: column;
+		width: calc(33.333% - 10px);
+		margin: 0px 5px 10px;
+	}
+
+	.l-post .l-post__summary {
+		padding: 15px 20px 20px;
+	}
+
+	.l-post--featured .l-post__summary {
+		padding: 30px;
+		padding-bottom: 50px;
+	}
+
+	.l-read__more {
+		flex-grow: 1;
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+	}
+
+	.l-read__more a {
+		padding: 10px 20px;
+		margin-bottom: 20px;
+	}
+
+	.l-read__more--featured a {
+		padding: 20px 30px;
+		margin-bottom: 50px;
+	}
+
+	.l-feature__block .l-post__image--featured {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		overflow: hidden;
+		max-height: 170px;
+	}
+
+	.read__more--smaller a {
+		padding: 6px 12px;
+		margin-bottom: 10px;
+	}
+
+	.js-overflow {
+		overflow: hidden;
+	}
+}

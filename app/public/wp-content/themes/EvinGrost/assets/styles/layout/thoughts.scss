@@ -1,0 +1,89 @@
+.l-thoughts {
+	padding: 40px;
+}
+
+.l-thoughts h1 {
+	margin: 30px 0px 100px;
+}
+
+.l-thoughts h2 {
+	margin: 30px 20px;
+}
+
+.l-thoughts p {
+	margin: 30px 20px;
+}
+
+.l-thoughts a {
+	display: block;
+}
+
+.l-blog__post {
+	margin-bottom: 100px;
+}
+
+.l-blog__all {
+	text-align: center;
+}
+
+.l-blog__all a {
+	display: inline-block;
+	padding: 30px 50px;
+	margin-bottom: 40px;
+}
+
+
+@media (hover: hover) {
+
+	.l-thoughts h1 {
+		margin: 0px 0px 75px;
+	}
+
+	.l-thoughts h2 {
+		margin: 20px;
+	}
+
+	.l-thoughts p {
+		margin: 20px;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.l-thoughts {
+		padding: 70px 40px;
+	}
+
+	.l-blogs {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		max-width: 1000px;
+		margin: 0px auto;
+	}
+
+	.l-blog__post {
+		width: calc(50% - 20px);
+	}
+
+	.l-blog__post h2 {
+		margin: 20px 5px;
+	}
+
+	.l-blog__post p {
+		margin: 20px 5px;
+	}
+
+	.l-blog__all a {
+		padding: 15px 35px;
+		margin: 0px auto;
+		margin-top: 10px;
+	}
+}
+
+@media (min-width: 1200px) {
+
+	.l-blog__post {
+		width: calc(33.333% - 30px);
+	}
+}

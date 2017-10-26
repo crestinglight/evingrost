@@ -1,0 +1,52 @@
+.hero {
+	font-family: $main;
+	color: $black;
+	font-size: 8vw;
+	line-height: 1.3em;
+
+	background-image: url("assets/images/heroLeft.png");
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+	background-size: 85% auto;
+}
+
+.hero--blog {
+	font-family: $main;
+	color: $black;
+	font-size: 8vw;
+	line-height: 1.3em;
+
+	background-image: url("assets/images/heroMobile.png");
+	background-repeat: no-repeat;
+	background-position: 0% 100%;
+	background-size: auto 90%;
+}
+
+@media (min-width: 1024px) {
+
+	.hero {
+		font-size: 7vw;
+		background-size: 773px auto;
+	}
+
+	.hero--blog {
+		font-size: 84px;
+	}
+}
+
+@media (min-width: 1200px) {
+
+	.hero {
+		font-size: 80px;
+		background-size: 820px auto;
+	}
+}
+
+
+@media (min-width: 1400px) {
+
+	.hero h1 {
+		font-size: 100px;
+		line-height: 1.3em;
+	}
+}
