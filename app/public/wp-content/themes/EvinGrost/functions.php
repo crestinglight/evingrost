@@ -1,6 +1,9 @@
 <?php
 
-add_theme_support( 'html5', array( 'search-form' ) );
+function wpdocs_after_setup_theme() {
+    add_theme_support( 'html5', array( 'search-form' ) );
+}
+add_action( 'after_setup_theme', 'wpdocs_after_setup_theme' );
 
 function get_post_excerpt( $post_id, $excerpt_length = null, $excerpt_more = null, $more_link = true ) {
 	$post = get_post( $post_id );

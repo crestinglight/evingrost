@@ -105,6 +105,10 @@ img.l-folder__icon {
 		line-height: 1.3em;
 	}
 
+	.l-post--featured .l-post__image {
+		max-height: 350px;
+	}
+
 	.l-post__header a {
 		padding: 10px 20px 13px;
 	}

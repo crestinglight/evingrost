@@ -46,18 +46,26 @@
 		<div class="navigation l-navigation">
 
 			<ul class="js-nav">
+
+				<?php 
+
+				$category_ids = get_all_category_ids();
 				
-				<li>
-					<a href="#" class="js-navLink">Tutorials</a>	
-				</li>
+				$args = array(
+					'title_li' => '',
+	            	'orderby' => 'id',
+	            	'hide_empty' => 0,
+	            	'exclude' => 1,
+	            	'parent' => 0
+				);
+				$categories = get_categories( $args );
+				foreach ( $categories as $category ) {
 
-				<li>
-					<a href="#" class="js-navLink">Inspiration</a>	
-				</li>
+					echo '<li><a href="' . get_category_link( $category->term_id ) . '" class="js-navLink">' . $category->name . '</a></li>';
+				}
 
-				<li>
-					<a href="#" class="js-navLink">Design</a>	
-				</li>
+
+				?>
 
 			</ul>
 
@@ -105,9 +113,11 @@
 
 		<div class="search l-search">
 
-			<form>
-			  <input type="text" name="search" placeholder="Search...">
-			</form>
+			<?php
+
+			get_search_form();
+
+			?>
 
 		</div>
 

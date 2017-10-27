@@ -22,8 +22,21 @@
 	letter-spacing: 1px;
 }
 
+.view__more {
+	text-align: center;
+}
+
+.view__more span {
+	font-family: $accent;
+	font-size: 40px;
+	text-transform: uppercase;
+	color: $primary;
+	border: 5px solid $primary;
+	border-radius: 100px;
+}
+
 .blog__all a {
-	font-family: $accent;;
+	font-family: $accent;
 	font-size: 64px;
 	text-transform: uppercase;
 	color: $primary;
@@ -66,6 +79,20 @@
 
 	.blog__post p {
 		font-size: 14px;
+	}
+
+	.view__more span {
+		font-size: 18px;
+		box-shadow: 0px 0px 0px 2px $secondary;
+		border: 2px solid $primary;
+		transition: all 0.3s ease;
+	}
+
+	.view__more span:hover {
+		color: $white;
+		background-color: $primary;
+		border: 2px solid $white;
+		box-shadow: 0px 0px 0px 2px $black;
 	}
 
 	.blog__all a {

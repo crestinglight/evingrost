@@ -22,6 +22,17 @@
 	margin-bottom: 100px;
 }
 
+.l-view__more {
+	display: block;
+	margin: 60px 0px;
+}
+
+.l-view__more span {
+	display: inline-block;
+	cursor: pointer;
+	padding: 30px 50px;
+}
+
 .l-blog__all {
 	text-align: center;
 }
@@ -62,8 +73,14 @@
 		margin: 0px auto;
 	}
 
+	.l-blogs a {
+		display: flex;
+		flex-direction: column;
+	}
+
 	.l-blog__post {
-		width: calc(50% - 20px);
+		width: calc(33.333% - 20px);
+
 	}
 
 	.l-blog__post h2 {
@@ -71,6 +88,7 @@
 	}
 
 	.l-blog__post p {
+		flex-grow: 1;
 		margin: 20px 5px;
 	}
 
@@ -79,11 +97,8 @@
 		margin: 0px auto;
 		margin-top: 10px;
 	}
-}
 
-@media (min-width: 1200px) {
-
-	.l-blog__post {
-		width: calc(33.333% - 30px);
+	.l-view__more span {
+		padding: 12px 30px;
 	}
 }

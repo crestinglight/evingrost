@@ -147,40 +147,42 @@
 
 		<div class="blogs l-blogs">
 
-			<a href="#" class="blog__post l-blog__post">
+			<?php 
 
-				<img src="assets/images/placeholder/800x600.png">
+				$args = array( 
+					'numberposts'		=> '3'
+				);
 
-				<h2>Blog Title</h2>
+				$recent_posts = wp_get_recent_posts( $args );
 
-				<p>Blog Excerpt Quisque eget dolor erat. Nunc congue odio sed arcu laoreet, at vulputate nibh sollicitudin. Maecenas molestie commodo lorem at condimentum. Nunc nec justo nec lorem aliquam tristique vel quis nisi. Integer quis finibus est.</p>
+			foreach ($recent_posts as $recent) {
 
-			</a>
+				$postIdNumber = $recent["ID"];
+				$excerpt = get_post_excerpt( $postIdNumber, 30, '...', false );
 
-			<a href="#" class="blog__post l-blog__post">
+				echo '<a href="' . get_permalink($postIdNumber) . '" class="blog__post l-blog__post">' .
 
-				<img src="assets/images/placeholder/800x600.png">
+					'<img src="' . get_field("preview_image", $postIdNumber) . '">' .
 
-				<h2>Blog Title</h2>
+					'<h2>' . $recent["post_title"] . '</h2>' .
 
-				<p>Blog Excerpt Quisque eget dolor erat. Nunc congue odio sed arcu laoreet, at vulputate nibh sollicitudin. Maecenas molestie commodo lorem at condimentum. Nunc nec justo nec lorem aliquam tristique vel quis nisi. Integer quis finibus est.</p>
+					'<p>' . $excerpt . '</p>' .
 
-			</a>
+					'<div class="view__more l-view__more">
 
-			<a href="#" class="blog__post l-blog__post">
+						<span>View this Post</span>
 
-				<img src="assets/images/placeholder/800x600.png">
+					</div>' . 
 
-				<h2>Blog Title</h2>
+				'</a>';
 
-				<p>Blog Excerpt Quisque eget dolor erat. Nunc congue odio sed arcu laoreet, at vulputate nibh sollicitudin. Maecenas molestie commodo lorem at condimentum. Nunc nec justo nec lorem aliquam tristique vel quis nisi. Integer quis finibus est.</p>
-
-			</a>
+			}
+			?>
 
 		</div>
 
 		<div class="blog__all l-blog__all">
-			<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'Blog' ) ) ); ?>">View more</a>
+			<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'Blog' ) ) ); ?>">Check out the Blog</a>
 		</div>
 
 	</div>

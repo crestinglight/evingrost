@@ -56,7 +56,32 @@
 }
 
 .read__more a {
-	font-family: $accent;;
+	font-family: $accent;
+	font-size: 50px;
+	text-transform: uppercase;
+	color: $primary;
+	border: 5px solid $primary;
+	border-radius: 100px;
+}
+
+.no__posts {
+	text-align: center;
+}
+
+.no__posts h2 {
+	font-family: $accent;
+	color: $primary;
+	font-size: 4vw;
+}
+
+.no__posts p {
+	font-family: $main;
+	color: $black;
+	font-size: 18px;
+}
+
+.no__posts a {
+	font-family: $accent;
 	font-size: 50px;
 	text-transform: uppercase;
 	color: $primary;
@@ -143,9 +168,35 @@
 
 	.read__more--smaller a {
 		font-size: 14px;
+		border: 2px solid $primary;
+		box-shadow: 0px 0px 0px 2px $white;
 	}
 
 	.read__more a:hover {
+		background-color: $primary;
+		color: $white;
+		border: 3px solid $white;
+		box-shadow: 0px 0px 0px 3px $black;
+	}
+
+	.read__more--smaller a:hover {
+		border: 2px solid $white;
+		box-shadow: 0px 0px 0px 2px $black;
+	}
+
+	.no__posts h2 {
+		font-size: 34px;
+	}
+
+	.no__posts a {
+		font-size: 24px;
+		border: 3px solid $primary;
+		box-shadow: 0px 0px 0px 3px $secondary;
+		-webkit-font-smoothing: antialiased;
+		transition: all 0.3s ease;
+	}
+
+	.no__posts a:hover {
 		background-color: $primary;
 		color: $white;
 		border: 3px solid $white;

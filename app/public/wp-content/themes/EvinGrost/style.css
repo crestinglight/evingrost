@@ -486,7 +486,10 @@ img {
     padding: 15px 35px;
     margin-top: 35px; } }
 body {
-  position: relative; }
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; }
 
 .l-thoughts {
   padding: 40px; }
@@ -505,6 +508,15 @@ body {
 
 .l-blog__post {
   margin-bottom: 100px; }
+
+.l-view__more {
+  display: block;
+  margin: 60px 0px; }
+
+.l-view__more span {
+  display: inline-block;
+  cursor: pointer;
+  padding: 30px 50px; }
 
 .l-blog__all {
   text-align: center; }
@@ -534,22 +546,27 @@ body {
     max-width: 1000px;
     margin: 0px auto; }
 
+  .l-blogs a {
+    display: flex;
+    flex-direction: column; }
+
   .l-blog__post {
-    width: calc(50% - 20px); }
+    width: calc(33.333% - 20px); }
 
   .l-blog__post h2 {
     margin: 20px 5px; }
 
   .l-blog__post p {
+    flex-grow: 1;
     margin: 20px 5px; }
 
   .l-blog__all a {
     padding: 15px 35px;
     margin: 0px auto;
-    margin-top: 10px; } }
-@media (min-width: 1200px) {
-  .l-blog__post {
-    width: calc(33.333% - 30px); } }
+    margin-top: 10px; }
+
+  .l-view__more span {
+    padding: 12px 30px; } }
 .l-contact {
   padding: 40px; }
 
@@ -666,7 +683,6 @@ body {
 .l-footer {
   display: block;
   padding: 110px 20px 70px;
-  margin-top: 15px;
   position: relative; }
 
 .l-footer p {
@@ -716,6 +732,9 @@ body {
 
   .l-footer p {
     margin-top: 0px; } }
+.l-blog {
+  flex-grow: 1; }
+
 .l-blog h1 {
   display: block;
   padding: 70px 30px 40px; }
@@ -753,6 +772,18 @@ body {
   display: inline-block;
   padding: 30px 50px;
   margin-bottom: 60px; }
+
+.l-no__posts {
+  display: block;
+  min-width: 100%; }
+
+.l-no__posts h2 {
+  margin-bottom: 40px; }
+
+.l-no__posts a {
+  display: inline-block;
+  padding: 30px 50px;
+  margin: 60px 0px 100px; }
 
 @media (min-width: 1024px) {
   .l-blog {
@@ -843,7 +874,11 @@ body {
     margin-bottom: 10px; }
 
   .js-overflow {
-    overflow: hidden; } }
+    overflow: hidden; }
+
+  .l-no__posts a {
+    padding: 15px 25px;
+    margin-bottom: 20px; } }
 .l-post__header {
   display: flex;
   justify-content: space-between;
@@ -930,6 +965,9 @@ img.l-folder__icon {
     margin: 40px auto;
     padding: 10px 10px;
     line-height: 1.3em; }
+
+  .l-post--featured .l-post__image {
+    max-height: 350px; }
 
   .l-post__header a {
     padding: 10px 20px 13px; }
@@ -1257,6 +1295,17 @@ em {
   line-height: 1.2em;
   letter-spacing: 1px; }
 
+.view__more {
+  text-align: center; }
+
+.view__more span {
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #ff354a;
+  border: 5px solid #ff354a;
+  border-radius: 100px; }
+
 .blog__all a {
   font-family: "Oswald", sans-serif;
   font-size: 64px;
@@ -1286,6 +1335,18 @@ em {
 
   .blog__post p {
     font-size: 14px; }
+
+  .view__more span {
+    font-size: 18px;
+    box-shadow: 0px 0px 0px 2px #F2F2F2;
+    border: 2px solid #ff354a;
+    transition: all 0.3s ease; }
+
+  .view__more span:hover {
+    color: #fff;
+    background-color: #ff354a;
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 0px 2px #000; }
 
   .blog__all a {
     font-size: 26px;
@@ -1492,6 +1553,27 @@ em {
   border: 5px solid #ff354a;
   border-radius: 100px; }
 
+.no__posts {
+  text-align: center; }
+
+.no__posts h2 {
+  font-family: "Oswald", sans-serif;
+  color: #ff354a;
+  font-size: 4vw; }
+
+.no__posts p {
+  font-family: "Oxygen", sans-serif;
+  color: #000;
+  font-size: 18px; }
+
+.no__posts a {
+  font-family: "Oswald", sans-serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #ff354a;
+  border: 5px solid #ff354a;
+  border-radius: 100px; }
+
 @media (min-width: 1024px) {
   .blog h1 {
     font-size: 52px; }
@@ -1551,9 +1633,31 @@ em {
     font-size: 32px; }
 
   .read__more--smaller a {
-    font-size: 14px; }
+    font-size: 14px;
+    border: 2px solid #ff354a;
+    box-shadow: 0px 0px 0px 2px #fff; }
 
   .read__more a:hover {
+    background-color: #ff354a;
+    color: #fff;
+    border: 3px solid #fff;
+    box-shadow: 0px 0px 0px 3px #000; }
+
+  .read__more--smaller a:hover {
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 0px 2px #000; }
+
+  .no__posts h2 {
+    font-size: 34px; }
+
+  .no__posts a {
+    font-size: 24px;
+    border: 3px solid #ff354a;
+    box-shadow: 0px 0px 0px 3px #F2F2F2;
+    -webkit-font-smoothing: antialiased;
+    transition: all 0.3s ease; }
+
+  .no__posts a:hover {
     background-color: #ff354a;
     color: #fff;
     border: 3px solid #fff;
