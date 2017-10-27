@@ -6,9 +6,15 @@
 	font-size: 48px;
 }
 
+.top {
+	pointer-events: none;
+}
+
 .top a {
 	background-color: $black;
 	border-radius: 100px;
+
+	pointer-events: auto;
 }
 
 

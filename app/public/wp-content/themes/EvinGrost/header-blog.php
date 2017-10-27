@@ -25,9 +25,11 @@
 
 			<div class="search l-search">
 
-				<form>
-				  <input type="text" name="search" placeholder="Search...">
-				</form>
+				<?php
+
+				get_search_form();
+
+				?>
 
 			</div>
 

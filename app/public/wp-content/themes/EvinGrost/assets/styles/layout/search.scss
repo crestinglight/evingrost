@@ -37,6 +37,14 @@
   color: $gray;
 }
 
+.l-search label {
+	display: none;
+}
+
+.l-search input[type="submit"] {
+  display: none;
+}
+
 
 @media (min-width: 1024px){
 

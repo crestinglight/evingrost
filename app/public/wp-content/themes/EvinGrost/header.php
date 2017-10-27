@@ -6,7 +6,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Oxygen|Oswald" rel="stylesheet">
 	<link rel="shortcut icon" type="image/x-icon" href="<?php bloginfo('template_directory'); ?>/assets/images/favicon.ico">
 
-	<script type="text/javascript" src="assets/scripts/mobileMenu.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/assets/scripts/mobileMenu.js"></script>
 
 </head>
 <body>

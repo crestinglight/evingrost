@@ -1,5 +1,7 @@
 <?php
 
+add_theme_support( 'html5', array( 'search-form' ) );
+
 function get_post_excerpt( $post_id, $excerpt_length = null, $excerpt_more = null, $more_link = true ) {
 	$post = get_post( $post_id );
 	if ( null === $excerpt_length ) {

@@ -102,6 +102,10 @@
 	font-size: 36px;
 }
 
+.code__comment {
+	opacity: 0.4;
+}
+
 .post__content pre {
 	border: 3px dashed $primary;
 }
@@ -152,6 +156,10 @@
 
 	.code__block {
 		font-size: 14px;
+	}
+
+	.post__content .inline__code {
+		letter-spacing: 0px;
 	}
 
 	.post__image::before {

@@ -26,110 +26,214 @@
 
 				<div class="l-feature__block">
 
-						<?php 
+					<?php 
 
-							$args = array( 
-								'numberposts' => 3,
-								'post_type' =>  'post',
-								'posts_per_page' => -1,
-								'orderby' => 'date'
-								);
+						$args = array( 
+							'numberposts' => 3,
+							'post_type' =>  'post',
+							'posts_per_page' => -1,
+							'orderby' => 'date'
+							);
 
-							$allPosts = get_posts( $args );
-							$i = 0;
+						$allPosts = get_posts( $args );
+						$i = 0;
 
-						foreach ($allPosts as $post) {
+					foreach ($allPosts as $post) {
 
-							$categories = get_the_category(); 
-							$categoryName = $categories[0]->cat_name;
-							$postIdNumber = get_the_ID();
-							$excerpt = get_post_excerpt( $postIdNumber, 75, '...', false );
+						$categories = get_the_category(); 
+						$categoryName = $categories[0]->cat_name;
+						$postIdNumber = get_the_ID();
+						$excerptFeatured = get_post_excerpt( $postIdNumber, 75, '...', false );
+						$excerpt = get_post_excerpt( $postIdNumber, 55, '...', false );
 
-							if ($i === 0) {
+						if ($i === 0) {
 
-								echo '<div class="post l-post post--featured l-post--featured js-featured">' .
+							echo '<div class="post l-post post--featured l-post--featured js-featured">' .
 
-									'<a href="' . get_permalink( $post_id ) . '">' .
+								'<a href="' . get_permalink( $post_id ) . '">' .
 
-										'<div class="l-post__image">' .
+									'<div class="l-post__image">' .
 
-											'<img src="' . get_field( 'preview_image' ) . '">' .
-											'<span class="category l-category">' . $categoryName . '</span>' .
+										'<img src="' . get_field( 'preview_image' ) . '">' .
+										'<span class="category l-category">' . $categoryName . '</span>' .
 
-										'</div>' .
+									'</div>' .
 
-										'<div class="post__summary l-post__summary">' .
+									'<div class="post__summary l-post__summary">' .
 
-											'<div class="post__title l-post__title">' . 
+										'<div class="post__title l-post__title">' . 
 
-												'<h1>' . get_the_title() . '</h1>' . 
+											'<h1>' . get_the_title() . '</h1>' . 
 
-											'</div>' . 
+										'</div>' . 
 
-											'<div class="post__date l-post__date">' . 
+										'<div class="post__date l-post__date">' . 
 
-												'<span>' . get_the_date() . '</span>' .
+											'<span>' . get_the_date() . '</span>' .
 
-											'</div>' . 
+										'</div>' . 
 
-											'<div class="post__excerpt l-post__excerpt">' .
+										'<div class="post__excerpt l-post__excerpt">' .
 
-												'<p>' . $excerpt . '</p>' .
+											'<p>' . $excerptFeatured . '</p>' .
 
-											'</div>' . 
+										'</div>' . 
 
-										'</div>' .
+									'</div>' .
 
-									'</a>' .
+								'</a>' .
 
-								'</div>';
-							}
+								'<div class="read__more l-read__more read__more--featured l-read__more--featured">
+									<a href="' . get_permalink( $post_id ) . '">Read More</a>
+								</div>' . 
+
+							'</div>';
 
 							$i++;
-
 						}
-						?>
 
-						<!-- <a href="#">
+						elseif ( $i === 1 ) {
 
-							<div class="l-post__image">
+							echo '<div class="post l-post js-postTop post--smaller">' . 
 
-								<img src="assets/images/placeholder/UI.jpg">
-								<span class="category l-category">Design</span>
+								'<a href="' . get_permalink( $post_id ) . '">' . 
 
-							</div>
+									'<div class="l-post__image l-post__image--featured">' . 
 
-							<div class="post__summary l-post__summary">
+										'<img src="' . get_field( 'preview_image' ) . '">' .
+										'<span class="category l-category">' . $categoryName . '</span>' .
 
-								<div class="post__title l-post__title">
+									'</div>' .
 
-									<h1>Principles of Great Design</h1>
+									'<div class="post__summary l-post__summary">' .
 
-								</div>
+										'<div class="post__title l-post__title">' . 
 
-								<div class="post__date l-post__date">
+											'<h1>' . get_the_title() . '</h1>' . 
 
-									<span>October 22, 2017</span>
+										'</div>' . 
 
-								</div>
+										'<div class="post__date l-post__date">' . 
 
-								<div class="post__excerpt l-post__excerpt">
+											'<span>' . get_the_date() . '</span>' .
 
-									<p>Nam ut aliquam diam. Phasellus congue enim vel malesuada iaculis. Vivamus congue eu quam sit amet elementum. Vestibulum in facilisis tellus, at interdum quam...</p>
+										'</div>' . 
 
-								</div>
+										'<div class="post__excerpt l-post__excerpt">' .
 
-							</div>
+											'<p class="js-overflow">' . $excerpt . '</p>' .
 
-						</a> -->
+										'</div>' . 
 
-						<div class="read__more l-read__more read__more--featured l-read__more--featured">
-							<a href="#">Read More</a>
-						</div>
+									'</div>' .
 
-					</div>
+								'</a>' .
 
-					<div class="post l-post js-postTop post--smaller">
+								'<div class="read__more l-read__more read__more--smaller">
+									<a href="' . get_permalink( $post_id ) . '">Read More</a>
+								</div>' . 
+
+							'</div>';
+
+							$i++;
+						}
+
+						elseif ( $i === 2 ) {
+
+							echo '<div class="post l-post js-postBottom post--smaller">' . 
+
+								'<a href="' . get_permalink( $post_id ) . '">' . 
+
+									'<div class="l-post__image l-post__image--featured">' . 
+
+										'<img src="' . get_field( 'preview_image' ) . '">' .
+										'<span class="category l-category">' . $categoryName . '</span>' .
+
+									'</div>' .
+
+									'<div class="post__summary l-post__summary">' .
+
+										'<div class="post__title l-post__title">' . 
+
+											'<h1>' . get_the_title() . '</h1>' . 
+
+										'</div>' . 
+
+										'<div class="post__date l-post__date">' . 
+
+											'<span>' . get_the_date() . '</span>' .
+
+										'</div>' . 
+
+										'<div class="post__excerpt l-post__excerpt">' .
+
+											'<p class="js-overflow">' . $excerpt . '</p>' .
+
+										'</div>' . 
+
+									'</div>' .
+
+								'</a>' .
+
+								'<div class="read__more l-read__more read__more--smaller">
+									<a href="' . get_permalink( $post_id ) . '">Read More</a>
+								</div>' . 
+
+							'</div>' .
+
+						'</div>';
+
+							$i++;
+						}
+
+						else {
+
+							echo '<div class="post l-post">' . 
+
+								'<a href="' . get_permalink( $post_id ) . '">' . 
+
+									'<div class="l-post__image l-post__image--featured">' . 
+
+										'<img src="' . get_field( 'preview_image' ) . '">' .
+										'<span class="category l-category">' . $categoryName . '</span>' .
+
+									'</div>' .
+
+									'<div class="post__summary l-post__summary">' .
+
+										'<div class="post__title l-post__title">' . 
+
+											'<h1>' . get_the_title() . '</h1>' . 
+
+										'</div>' . 
+
+										'<div class="post__date l-post__date">' . 
+
+											'<span>' . get_the_date() . '</span>' .
+
+										'</div>' . 
+
+										'<div class="post__excerpt l-post__excerpt">' .
+
+											'<p>' . $excerpt . '</p>' .
+
+										'</div>' . 
+
+									'</div>' .
+
+								'</a>' .
+
+								'<div class="read__more l-read__more">
+									<a href="' . get_permalink( $post_id ) . '">Read More</a>
+								</div>' . 
+
+							'</div>';
+						}
+
+					}
+					?>
+
+					<!-- <div class="post l-post js-postTop post--smaller">
 
 						<a href="#">
 
@@ -211,9 +315,9 @@
 
 					</div>
 
-				</div>
+				</div> -->
 
-				<div class="post l-post">
+				<!-- <div class="post l-post">
 
 					<a href="#">
 
@@ -457,7 +561,7 @@
 						<a href="#">Read More</a>
 					</div>
 
-				</div>
+				</div> -->
 
 			</div>
 
