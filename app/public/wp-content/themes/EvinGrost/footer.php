@@ -26,16 +26,16 @@
 
 		<div class="socials l-socials">
 
-			<a href="mailto:evin.grost@gmail.com">
-				<img src="<?php bloginfo("template_directory"); ?>/assets/images/email.png">
-			</a>
-
 			<a href="https://twitter.com/evingrost" target="_blank">
-				<img src="<?php bloginfo("template_directory"); ?>/assets/images/twitter.png">
+				<img src="<?php bloginfo('template_directory'); ?>/assets/images/twitter.png">
 			</a>
 
-			<a href="https://www.linkedin.com/in/evingrost/" target="_blank">
-				<img src="<?php bloginfo("template_directory"); ?>/assets/images/linkedin.png">
+			<a href="https://github.com/crestinglight" target="_blank">
+				<img src="<?php bloginfo('template_directory'); ?>/assets/images/github.png">
+			</a>
+
+			<a href="https://www.linkedin.com/in/evingrost" target="_blank">
+				<img src="<?php bloginfo('template_directory'); ?>/assets/images/linkedin.png">
 			</a>
 
 		</div>

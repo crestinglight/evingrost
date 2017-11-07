@@ -22,7 +22,7 @@ window.addEventListener("load", function(){
 
 	function neededHeight(featureHeight){
 
-		var desiredHeight = Math.floor(featureHeight / 2) - 1.5;
+		var desiredHeight = Math.floor(featureHeight / 2) - 4;
 		
 		currentHeight(desiredHeight);
 	}

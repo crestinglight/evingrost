@@ -20,6 +20,18 @@
 
 		<h1>Welcome to the Blog</h1>
 
+		<div class="category__back l-category__back">
+
+			<span>Topic: </span>
+
+			<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'Blog' ) ) ); ?>">
+
+				<?php single_cat_title(); ?>
+				<img src="<?php bloginfo('template_directory'); ?>/assets/images/categoryCancel.png">
+			</a>
+
+		</div>
+
 		<div class="blog__wrapper l-blog__wrapper">
 
 			<div class="blog__posts l-blog__posts">
@@ -102,6 +114,18 @@
 				?>
 
 			</div>
+
+		</div>
+
+		<div class="category__back l-category__back l-category__back--bottom">
+
+			<span>Topic: </span>
+
+			<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'Blog' ) ) ); ?>">
+
+				<?php single_cat_title(); ?>
+				<img src="<?php bloginfo('template_directory'); ?>/assets/images/categoryCancel.png">
+			</a>
 
 		</div>
 

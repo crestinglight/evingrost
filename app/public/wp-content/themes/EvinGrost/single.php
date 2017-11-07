@@ -6,16 +6,16 @@
 
 		<div class="nextPrev l-nextPrev">
 
-			<?php previous_post_link('%link','Previous', TRUE); ?>
+			<?php previous_post_link('%link','Previous', FALSE); ?>
 
 			<?php
 
-			if( (!get_next_post_link('%link','Next', TRUE) == "") && (!get_previous_post_link('%link','Previous', TRUE) == "") ){
+			if( (!get_next_post_link('%link','Next', FALSE) == "") && (!get_previous_post_link('%link','Previous', FALSE) == "") ){
 				echo '<span>|</span>';
 			}
 			?>
 
-			<?php next_post_link('%link','Next', TRUE); ?>
+			<?php next_post_link('%link','Next', FALSE); ?>
 
 		</div>
 
@@ -51,16 +51,16 @@
 
 		<div class="nextPrev l-nextPrev">
 
-			<?php previous_post_link('%link','Previous', TRUE); ?>
+			<?php previous_post_link('%link','Previous', FALSE); ?>
 
 			<?php
 
-			if( (!get_next_post_link('%link','Next', TRUE) == "") && (!get_previous_post_link('%link','Previous', TRUE) == "") ){
+			if( (!get_next_post_link('%link','Next', FALSE) == "") && (!get_previous_post_link('%link','Previous', FALSE) == "") ){
 				echo '<span>|</span>';
 			}
 			?>
 
-			<?php next_post_link('%link','Next', TRUE); ?>
+			<?php next_post_link('%link','Next', FALSE); ?>
 
 		</div>
 

@@ -89,6 +89,22 @@
 	border-radius: 100px;
 }
 
+.category__back {
+	font-family: $accent;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: $black;
+}
+
+.category__back a {
+	font-family: $accent;
+	font-size: 50px;
+	text-transform: uppercase;
+	color: $black;
+	background-color: $white;
+	border-radius: 100px;
+}
+
 
 @media (min-width: 1024px){
 
@@ -201,5 +217,13 @@
 		color: $white;
 		border: 3px solid $white;
 		box-shadow: 0px 0px 0px 3px $black;
+	}
+
+	.category__back {
+		font-size: 22px;
+	}
+
+	.category__back a {
+		font-size: 22px;
 	}
 }

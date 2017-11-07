@@ -43,7 +43,7 @@
 						$categoryName = $categories[0]->cat_name;
 						$postIdNumber = get_the_ID();
 						$excerptFeatured = get_post_excerpt( $postIdNumber, 55, '...', false );
-						$excerpt = get_post_excerpt( $postIdNumber, 28, '...', false );
+						$excerpt = get_post_excerpt( $postIdNumber, 38, '...', false );
 
 						if ($i === 0) {
 

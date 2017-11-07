@@ -4,7 +4,11 @@
 
 .l-blog h1 {
 	display: block;
-	padding: 70px 30px 40px;
+	padding: 70px 30px;
+}
+
+.l-blog__wrapper {
+	position: relative;
 }
 
 .l-blog__posts {
@@ -63,6 +67,33 @@
 	display: inline-block;
 	padding: 30px 50px;
 	margin: 60px 0px 100px;
+}
+
+.l-category__back {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 40px;
+}
+
+.l-category__back span {
+	margin-right: 20px;
+}
+
+.l-category__back a {
+	display: inline-flex;
+	align-items: center;
+	padding: 10px 15px 14px 50px;
+}
+
+.l-category__back a img {
+	margin-left: 30px;
+	margin-top: 2px;
+	max-width: 80px;
+}
+
+.l-category__back--bottom {
+	margin-bottom: 150px;
 }
 
 
@@ -183,5 +214,23 @@
 	.l-no__posts a {
 		padding: 15px 25px;
 		margin-bottom: 20px;
+	}
+
+	.l-category__back span {
+		margin-right: 10px;
+	}
+
+	.l-category__back a {
+		padding: 5px 10px 8px 20px;
+	}
+
+	.l-category__back a img {
+		margin-left: 12px;
+		max-width: 32px;
+	}
+
+	.l-category__back--bottom {
+		margin-top: 40px;
+		margin-bottom: 50px;
 	}
 }

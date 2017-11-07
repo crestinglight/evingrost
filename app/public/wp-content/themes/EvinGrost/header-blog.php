@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Evin Grost - Welcome to the Blog</title>
+	<title>
+		<?php
+		    
+		    if ( is_home() || is_front_page() ) {
+		      echo "Evin Grost - Welcome to the Blog";
+		    }
+
+		    elseif ( is_404() ) {
+		      echo '404 Error | Page Not Found';
+		    }
+
+		    elseif ( is_single() ) {
+		      wp_title(''); echo " | "; bloginfo( 'name' );
+		    }
+
+		    else {
+		      echo wp_title( ' | ', false, right ); bloginfo( 'name' );
+		    }
+		?>
+	</title>
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Oxygen|Oswald|Roboto+Mono" rel="stylesheet">
 	<link rel="shortcut icon" type="image/x-icon" href="<?php bloginfo('template_directory'); ?>/assets/images/favicon.ico">
 
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/assets/scripts/mobileMenu.js"></script>
-	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/assets/scripts/featured.js"></script>
+
+	<?php
+	    
+	    if ( is_home() ) { ?>
+
+	    <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/assets/scripts/featured.js"></script>
+
+	    <?php
+
+		}
+	?>
+	
 </head>
 <body>
 
