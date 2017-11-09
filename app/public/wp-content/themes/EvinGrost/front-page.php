@@ -193,11 +193,11 @@
 
 		<p>Have a question or an awesome idea for a new project? Shoot me a message, I'd love to help you get started, or just to chat.</p>
 
-		<form action="https://formspree.io/your@email.com" method="POST">
+		<form action="https://formspree.io/evin.grost@gmail.com" method="POST">
 
 			<input type="hidden" name="_subject" value="Personal Site Contact Form" />
 
-			<input type="hidden" name="_next" value="thanks.html" />
+			<input type="hidden" name="_next" value="thanks.php" />
 
 			<div class="contact__input l-contact__input">
 				<label for="name">Name*: </label>

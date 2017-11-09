@@ -6,7 +6,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Oxygen|Oswald" rel="stylesheet">
 	<link rel="shortcut icon" type="image/x-icon" href="<?php bloginfo('template_directory'); ?>/assets/images/favicon.ico">
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/assets/scripts/mobileMenu.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/assets/scripts/smoothScroll.js"></script>
 
 </head>
 <body>
