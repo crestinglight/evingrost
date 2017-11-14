@@ -11,9 +11,9 @@
 
 	<div class="thanks l-thanks">
 
-		<h1>Thanks for your submission!</h1>
+		<h1>Oops!</h1>
 
-		<p>I'll get back with you shortly. I look forward to chatting with you!</p>
+		<p>404 - I couldn't find the page you're looking for. Try one of the links below instead.</p>
 
 		<div class="links l-links">
 

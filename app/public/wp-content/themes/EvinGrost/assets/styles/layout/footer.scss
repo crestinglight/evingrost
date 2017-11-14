@@ -35,6 +35,10 @@
 	display: none;
 }
 
+.l-footer.l-footer--special {
+	padding: 70px 20px;
+}
+
 
 @media (hover: hover) {
 
@@ -60,6 +64,10 @@
 	.l-footer {
 		padding: 45px 20px 40px;
 		margin-top: 0px;
+	}
+
+	.l-footer.l-footer--special {
+		padding: 40px 20px;
 	}
 
 	.l-footer .l-socials {

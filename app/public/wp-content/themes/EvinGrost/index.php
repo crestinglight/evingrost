@@ -43,7 +43,7 @@
 						$categoryName = $categories[0]->cat_name;
 						$postIdNumber = get_the_ID();
 						$excerptFeatured = get_post_excerpt( $postIdNumber, 55, '...', false );
-						$excerpt = get_post_excerpt( $postIdNumber, 38, '...', false );
+						$excerpt = get_post_excerpt( $postIdNumber, 35, '...', false );
 
 						if ($i === 0) {
 
@@ -93,7 +93,9 @@
 
 						elseif ( $i === 1 ) {
 
-							echo '<div class="post l-post js-postTop post--smaller">' . 
+							echo '<div class="l-featured--secondary">' . 
+
+							'<div class="post l-post l-post--featured--secondary">' . 
 
 								'<a href="' . get_permalink( $post_id ) . '">' . 
 
@@ -139,7 +141,7 @@
 
 						elseif ( $i === 2 ) {
 
-							echo '<div class="post l-post js-postBottom post--smaller">' . 
+							echo '<div class="post l-post l-post--featured--secondary">' . 
 
 								'<a href="' . get_permalink( $post_id ) . '">' . 
 
@@ -180,7 +182,9 @@
 
 							'</div>' .
 
-						'</div>';
+							'</div>' .
+
+							'</div>';
 
 							$i++;
 						}

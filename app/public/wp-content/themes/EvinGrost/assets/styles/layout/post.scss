@@ -90,9 +90,11 @@ img.l-image__centered--large {
 	margin: 0px auto 40px;
 }
 
-img.l-folder__icon {
+.l-post__content img.l-folder__icon {
+	display: inline;
 	max-width: 16px;
 	height: auto;
+	margin: 0px;
 }
 
 

@@ -194,6 +194,30 @@
 		margin-bottom: 50px;
 	}
 
+	.l-feature__block {
+		display: flex;
+	}
+
+	.l-featured--secondary {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.l-post.l-post--featured--secondary {
+		width: 100%;
+		display: flex;
+		flex-grow: 1;
+	}
+
+	.l-post.l-post--featured--secondary .l-post__summary {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.l-post.l-post--featured--secondary .l-post__summary p {
+		flex-grow: 1;
+	}
+
 	.l-feature__block .l-post__image--featured {
 		display: flex;
 		align-items: center;

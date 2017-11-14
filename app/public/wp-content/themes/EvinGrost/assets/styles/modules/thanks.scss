@@ -1,0 +1,66 @@
+.thanks {
+	background-image: url("assets/images/heroThanks.png"), url("assets/images/heroLeft.png");
+	background-repeat: no-repeat;
+	background-size: auto 46%, auto 50%;
+	background-position: -100px 0px, 130% 105%;
+}
+
+.thanks h1 {
+	color: $black;
+	font-family: $main;
+	font-size: 100px;
+	text-align: center;
+	line-height: 1.2em;
+}
+
+.thanks a {
+	font-family: $accent;
+	font-size: 54px;
+	text-transform: uppercase;
+	color: $primary;
+	border: 5px solid $primary;
+	border-radius: 100px;
+	text-align: center;
+}
+
+.thanks p {
+	font-family: $main;
+	font-size: 32px;
+	line-height: 1.4em;
+}
+
+
+@media (min-width: 1024px){
+
+	.thanks {
+		background-size: auto 80%, auto 90%;
+		background-position: 0px 0px, 110% 100%;
+	}
+
+	.thanks h1 {
+		font-size: 50px;
+	}
+
+	.thanks a {
+		font-size: 28px;
+		border: 3px solid $primary;
+		box-shadow: 0px 0px 0px 3px $white;
+		-webkit-font-smoothing: antialiased;
+		transition: all 0.3s ease;
+	}
+
+	.thanks a:hover {
+		background-color: $primary;
+		color: $white;
+		border: 3px solid $white;
+		box-shadow: 0px 0px 0px 3px $black;
+	}
+}
+
+@media (min-width: 1200px){
+
+	.thanks {
+		background-size: auto 90%;
+		background-position: 0px 0px, 100% 100%;
+	}
+}

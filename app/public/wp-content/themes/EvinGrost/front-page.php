@@ -121,11 +121,11 @@
 				<h2>Cerious Technologies</h2>
 				<h3>Design, UI/UX design, Full stack implementation</h3>
 
-				<p>Cerious Technologies is a leader in the audio equipment community, focused on never-before-heard quality at an affordable price. Each of their cables are handmade and filled with the highest grade synthetic materials.</p>
+				<p>Cerious Technologies is a leader in the audio equipment community, focused on never-before-heard quality at an affordable price. Each of their cables are handmade and filled with the highest grade synthetic materials. This site is still a work in progrees and will go live November 24th. Click the link to see our progress so far!</p>
 
 			</div>
 
-			<a href="http://lincolncalling.com/" target="_blank">Visit Site</a>
+			<a href="http://cerious-tech.s3-website.us-east-2.amazonaws.com/" target="_blank">Visit Site</a>
 
 		</div>
 
@@ -135,7 +135,7 @@
 
 			<h2>Want to see more examples of my work?</h2>
 
-			<a href="mailto:evin.grost@gmail.com" target="_blank">Email me</a>
+			<a href="mailto:hello@evingrost.com" target="_blank">Email me</a>
 
 		</div>
 
@@ -197,7 +197,7 @@
 
 			<input type="hidden" name="_subject" value="Personal Site Contact Form" />
 
-			<input type="hidden" name="_next" value="thanks.php" />
+			<input type="hidden" name="_next" value="/thanks" />
 
 			<div class="contact__input l-contact__input">
 				<label for="name">Name*: </label>
