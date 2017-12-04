@@ -568,7 +568,8 @@ body {
   .l-view__more span {
     padding: 12px 30px; } }
 .l-contact {
-  padding: 40px; }
+  padding: 40px;
+  padding-bottom: 150px; }
 
 .l-contact h1 {
   margin: 30px 0px 100px; }
@@ -1131,6 +1132,304 @@ img.l-image__centered--large {
 @media (min-width: 1200px) {
   .l-thanks p {
     max-width: 750px; } }
+.l-header--cl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px 0px 10px;
+  position: relative; }
+
+.l-logo--cl {
+  max-width: 150px; }
+
+.l-logo--cl a {
+  display: block;
+  padding: 20px; }
+
+.l-headerLinks--cl {
+  position: relative; }
+
+.l-headerLinks--cl ul {
+  display: block;
+  min-width: 100%;
+  position: absolute;
+  top: -1px;
+  left: 0;
+  z-index: 5;
+  overflow: hidden;
+  max-height: 0px; }
+
+.l-headerLinks--cl ul li a {
+  display: block;
+  padding: 40px;
+  min-width: 100%; }
+
+.l-headerLinks--cl ul li:last-child a {
+  padding-bottom: 80px; }
+
+.l-burger--cl {
+  max-width: 135px; }
+
+.l-burger--cl a {
+  display: block;
+  padding: 20px; }
+
+.l-heroImg--cl {
+  display: flex;
+  min-height: 700px; }
+
+.l-hero--skyline {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative; }
+
+.l-hero--skyline::after {
+  display: block;
+  height: 5px;
+  position: absolute;
+  z-index: 2;
+  bottom: -3px;
+  left: 0;
+  min-width: 100%; }
+
+.l-hero--skyline span {
+  margin-top: 100px; }
+
+.l-bodyContent--cl h1 {
+  margin: 80px 100px 30px;
+  padding-bottom: 20px; }
+
+.l-bodyContent--cl h1::after {
+  text-align: center;
+  display: block;
+  height: 5px;
+  width: 60%;
+  margin: 30px auto; }
+
+.l-bodyContent--cl h2 {
+  margin: 50px 80px 30px; }
+
+.l-bodyContent--cl p {
+  margin: 0px 50px 30px; }
+
+.l-about--cl img {
+  display: block;
+  border-radius: 100%;
+  width: 50%;
+  max-width: 500px;
+  margin: 40px auto 80px; }
+
+.l-letsChat {
+  margin: 0px 30px;
+  padding: 25px;
+  display: block; }
+
+.l-letsChat h1 {
+  margin-top: 0px;
+  margin-bottom: 20px; }
+
+.l-letsChat h2 {
+  margin-top: 20px; }
+
+.l-letsChatContent {
+  padding: 30px; }
+
+.l-letsChatContent img {
+  display: block;
+  width: 50%;
+  max-width: 400px;
+  margin: 0px auto; }
+
+.l-socialContainer--cl {
+  display: block;
+  text-align: center; }
+
+.l-social--cl {
+  display: inline-block;
+  padding: 0; }
+
+.l-social--cl li {
+  display: inline-block;
+  margin: 0.15em;
+  position: relative; }
+
+.l-social--cl i {
+  position: absolute;
+  top: 30px;
+  left: 37px; }
+
+.l-social--cl a {
+  display: inline-block; }
+
+.l-social--cl a:before {
+  width: 150px;
+  height: 150px;
+  display: block; }
+
+.l-footer--cl {
+  display: block;
+  min-width: 100%;
+  margin-top: 30px; }
+
+.l-footer--cl a {
+  display: inline-block;
+  padding: 30px; }
+
+.l-headerLinks--cl--desktop {
+  display: none; }
+
+@media (min-width: 1024px) {
+  .l-headerLinks--cl--mobile {
+    display: none; }
+
+  .l-logo--cl {
+    max-width: 70px; }
+
+  .l-logo--cl a {
+    padding: 10px; }
+
+  .l-burger--cl {
+    display: none; }
+
+  .l-headerLinks--cl--desktop {
+    display: inline-block; }
+
+  .l-headerLinks--cl ul {
+    display: flex;
+    min-width: 0px;
+    position: static;
+    overflow: visible;
+    max-height: none; }
+
+  .l-headerLinks--cl ul li a {
+    padding: 10px 10px 15px; }
+
+  .l-headerLinks--cl ul li:last-child a {
+    padding: 10px; }
+
+  .l-heroImg--cl {
+    min-height: 550px; }
+
+  .l-hero--skyline span {
+    margin-top: 50px; }
+
+  .l-bodyContent--cl {
+    padding: 50px 100px; }
+
+  .l-bodyContent--cl h2 {
+    margin: 0px 0px 20px; }
+
+  .l-bodyContent--cl .l-about--cl h1 {
+    width: 75%;
+    margin: 0px 0px 30px;
+    display: inline-block;
+    padding-bottom: 10px; }
+
+  .l-bodyContent--cl h1::after {
+    display: none; }
+
+  .l-bodyContent--cl p {
+    margin: 0px 0px 30px; }
+
+  .l-bodyContent--cl .l-about--cl p {
+    max-width: 100%;
+    display: inline-block; }
+
+  .l-bodyContent--cl .l-about--cl img {
+    width: 20%;
+    max-width: 230px;
+    margin: 0px 0px 0px 30px; }
+
+  .l-about--cl {
+    display: flex;
+    align-items: center; }
+
+  .l-clBody {
+    display: flex;
+    justify-content: space-between; }
+
+  .l-clLeft,
+  .l-clRight {
+    max-width: calc(50% - 20px); }
+
+  .l-clBody h1 {
+    display: block;
+    margin: 30px 0px;
+    padding-bottom: 10px; }
+
+  .l-socialContainer--cl {
+    margin-top: 20px; }
+
+  .l-social--cl a:before {
+    width: 60px;
+    height: 60px; }
+
+  .l-social--cl i {
+    top: 16px;
+    left: 18px; }
+
+  .l-examples h1 {
+    max-width: 60%;
+    margin: 30px 0px;
+    padding-bottom: 10px; }
+
+  .l-examples img {
+    max-width: 70%;
+    display: block;
+    margin: 0px auto; }
+
+  .l-letsChat {
+    max-width: 50%;
+    margin: 0px auto;
+    padding: 6px; }
+
+  .l-letsChatContent {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px; }
+
+  .l-letsChatContent h1 {
+    margin: 0px 0px 15px;
+    padding-bottom: 10px; }
+
+  .l-letsChatContent h2 {
+    margin: 0px 0px 8px; }
+
+  .l-letsChatContent p {
+    margin: 0px; }
+
+  .l-chatBox {
+    max-width: calc(60% - 15px); }
+
+  .l-letsChatImage {
+    width: 40%; }
+
+  .l-letsChatContent img {
+    width: 100%; }
+
+  .l-footer--cl a {
+    padding: 20px 15px; } }
+@media (min-width: 1150px) {
+  .l-heroImg--cl {
+    min-height: 650px; }
+
+  .l-hero--skyline span {
+    margin-top: 80px; } }
+@media (min-width: 1200px) {
+  .l-heroImg--cl {
+    min-height: 550px; } }
+@media (min-width: 1250px) {
+  .l-letsChat {
+    max-width: 500px; } }
+@media (min-width: 1550px) {
+  .l-heroImg--cl {
+    min-height: 700px; } }
+@media (min-width: 1600px) {
+  .l-hero--skyline span {
+    margin-top: 120px; } }
 .header {
   background-color: #ff354a; }
 
@@ -2021,5 +2320,179 @@ em {
   .thanks {
     background-size: auto 90%;
     background-position: 0px 0px, 100% 100%; } }
+.header--cl {
+  background-color: #424242; }
+
+.headerLinks--cl ul {
+  color: #fff;
+  background-color: #424242;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 7vw;
+  text-align: center;
+  transition: all 0.2s ease; }
+
+.heroImg--cl {
+  background: #f5ad05;
+  /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(at top left 50%, #f5ad05 10%, #f94f6c);
+  /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(at top left 50%, #f5ad05 10%, #f94f6c);
+  /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(at top left 50%, #f5ad05 10%, #f94f6c);
+  /* For Firefox 3.6 to 15 */
+  background: radial-gradient(at top left 50%, #f5ad05 10%, #f94f6c);
+  /* Standard syntax */
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  font-size: 10vw;
+  text-align: center;
+  line-height: 1.2em; }
+
+.hero--skyline {
+  background-image: url("assets/images/CL/OmahaSkyline.png");
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  background-size: 100% auto; }
+
+.hero--skyline::after {
+  content: '';
+  background-color: #fff; }
+
+.bodyContent--cl {
+  font-family: "EB Garamond", serif;
+  color: #424242; }
+
+.bodyContent--cl h1 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  font-size: 6vw;
+  line-height: 1.3em; }
+
+.bodyContent--cl h2 {
+  text-transform: uppercase;
+  font-size: 3vw;
+  line-height: 1.3em; }
+
+.bodyContent--cl p {
+  font-size: 30px;
+  line-height: 1.1em; }
+
+.bodyContent--cl h1::after {
+  content: '';
+  background-color: #f5ad05; }
+
+.letsChat {
+  background: #f5ad05;
+  /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(at top left 0%, #f5ad05 10%, #f94f6c);
+  /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(at top left 0%, #f5ad05 10%, #f94f6c);
+  /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(at top left 0%, #f5ad05 10%, #f94f6c);
+  /* For Firefox 3.6 to 15 */
+  background: radial-gradient(at top left 0%, #f5ad05 10%, #f94f6c);
+  /* Standard syntax */ }
+
+.bodyContent--cl .letsChat h1::after {
+  background-color: #f94f6c; }
+
+.letsChat a {
+  border-bottom: 3px dashed #f94f6c; }
+
+.letsChatContent {
+  background-color: #fff; }
+
+.footer--cl {
+  background-color: #424242;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 4vw;
+  text-align: center; }
+
+.social--cl li {
+  font-size: 90px; }
+
+.social--cl i {
+  color: #fff;
+  transition: all 0.3s ease-out; }
+
+.social--cl a:before {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  content: " ";
+  border-radius: 100%;
+  background: linear-gradient(45deg, #f94f6c 30%, #f5ad05);
+  transition: all 0.3s ease-out; }
+
+@media (min-width: 1024px) {
+  .headerLinks--cl ul {
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px; }
+
+  .heroImg--cl {
+    font-size: 72px;
+    line-height: 1.2em; }
+
+  .hero--skyline {
+    background-position: 0% 125%;
+    background-size: 100% auto; }
+
+  .bodyContent--cl h1 {
+    font-size: 30px;
+    text-align: left;
+    border-bottom: 3px solid #f5ad05;
+    font-weight: 300;
+    -webkit-font-smoothing: subpixel-antialiased; }
+
+  .bodyContent--cl h2 {
+    font-size: 22px;
+    text-align: left; }
+
+  .bodyContent--cl p {
+    font-size: 18px;
+    line-height: 1.3em; }
+
+  .social--cl li {
+    font-size: 28px; }
+
+  .social--cl a:hover:before {
+    transform: scale(0);
+    transition: all 0.3s ease-in; }
+
+  .social--cl a:hover i {
+    transform: scale(2.2);
+    -ms-transform: scale(2.2);
+    -webkit-transform: scale(2.2);
+    color: #f5ad05;
+    background: -webkit-linear-gradient(135deg, #f94f6c 30%, #f5ad05);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in; }
+
+  .letsChat a {
+    border-bottom: 1px dashed #f94f6c; }
+
+  .letsChat a:hover {
+    border-bottom: 1px solid #f94f6c; }
+
+  .footer--cl {
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 1px; } }
+@media (min-width: 1200px) {
+  .hero--skyline {
+    background-image: url("assets/images/CL/OmahaSkyline-large.png");
+    background-position: 50% 100%;
+    background-size: 110% auto; } }
+@media (min-width: 1600px) {
+  .hero--skyline {
+    background-position: 0% 100%;
+    background-size: 100% auto; } }
 
 /*# sourceMappingURL=style.css.map */

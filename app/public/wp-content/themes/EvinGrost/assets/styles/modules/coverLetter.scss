@@ -1,0 +1,213 @@
+@mixin radial-gradient-center($colorStart, $colorFinish) {
+	background: $colorStart; /* For browsers that do not support gradients */
+	background: -webkit-radial-gradient(at top left 50%, $colorStart 10%, $colorFinish); /* Safari 5.1 to 6.0 */
+	background: -o-radial-gradient(at top left 50%, $colorStart 10%, $colorFinish); /* For Opera 11.6 to 12.0 */
+	background: -moz-radial-gradient(at top left 50%, $colorStart 10%, $colorFinish); /* For Firefox 3.6 to 15 */
+	background: radial-gradient(at top left 50%, $colorStart 10%, $colorFinish); /* Standard syntax */
+}
+
+@mixin radial-gradient-left($colorStart, $colorFinish) {
+	background: $colorStart; /* For browsers that do not support gradients */
+	background: -webkit-radial-gradient(at top left 0%, $colorStart 10%, $colorFinish); /* Safari 5.1 to 6.0 */
+	background: -o-radial-gradient(at top left 0%, $colorStart 10%, $colorFinish); /* For Opera 11.6 to 12.0 */
+	background: -moz-radial-gradient(at top left 0%, $colorStart 10%, $colorFinish); /* For Firefox 3.6 to 15 */
+	background: radial-gradient(at top left 0%, $colorStart 10%, $colorFinish); /* Standard syntax */
+}
+
+.header--cl {
+	background-color: $clSecondary;
+}
+
+.headerLinks--cl ul {
+	color: $clPrimary;
+	background-color: $clSecondary;
+	font-family: $accent;
+	text-transform: uppercase;
+	font-size: 7vw;
+	text-align: center;
+	transition: all 0.2s ease;
+}
+
+.heroImg--cl {
+	@include radial-gradient-center($clOrange, $clPink);
+	font-family: $accent;
+	color: $clPrimary;
+	font-size: 10vw;
+	text-align: center;
+	line-height: 1.2em;
+}
+
+.hero--skyline {
+	background-image: url("assets/images/CL/OmahaSkyline.png");
+	background-repeat: no-repeat;
+	background-position: 0% 100%;
+	background-size: 100% auto;
+}
+
+.hero--skyline::after {
+	content: '';
+	background-color: $clPrimary;
+}
+
+.bodyContent--cl {
+	font-family: $clSerif;
+	color: $clSecondary;
+}
+
+.bodyContent--cl h1 {
+	font-family: $accent;
+	text-transform: uppercase;
+	-webkit-font-smoothing: antialiased;
+	text-align: center;
+	font-size: 6vw;
+	line-height: 1.3em;
+}
+
+.bodyContent--cl h2 {
+	text-transform: uppercase;
+	font-size: 3vw;
+	line-height: 1.3em;
+}
+
+.bodyContent--cl p {
+	font-size: 30px;
+	line-height: 1.1em;
+}
+
+.bodyContent--cl h1::after {
+	content: '';
+	background-color: $clOrange;
+}
+
+.letsChat {
+	@include radial-gradient-left($clOrange, $clPink);
+}
+
+.bodyContent--cl .letsChat h1::after {
+	background-color: $clPink;
+}
+
+.letsChat a {
+	border-bottom: 3px dashed $clPink;
+}
+
+.letsChatContent {
+	background-color: $clPrimary;
+}
+
+.footer--cl {
+	background-color: $clSecondary;
+	color: $clPrimary;
+	font-family: $accent;
+	text-transform: uppercase;
+	font-size: 4vw;
+	text-align: center;
+}
+
+.social--cl li {
+	font-size: 90px; 
+}
+
+.social--cl i {
+	color: $clPrimary;
+	transition: all 0.3s ease-out;
+}
+
+.social--cl a:before {
+	transform: scale(1);
+	-ms-transform: scale(1);
+	-webkit-transform: scale(1);
+	content: " ";
+	border-radius: 100%;
+	background: linear-gradient(45deg, $clPink 30%, $clOrange);
+	transition: all 0.3s ease-out; 
+}
+
+
+@media (min-width: 1024px){
+
+	.headerLinks--cl ul {
+		font-size: 18px;
+		font-weight: 300;
+		letter-spacing: 1px;
+	}
+
+	.heroImg--cl {
+		font-size: 72px;
+		line-height: 1.2em;
+	}
+
+	.hero--skyline {
+		background-position: 0% 125%;
+		background-size: 100% auto;
+	}
+
+	.bodyContent--cl h1 {
+		font-size: 30px;
+		text-align: left;
+		border-bottom: 3px solid $clOrange;
+		font-weight: 300;
+		-webkit-font-smoothing: subpixel-antialiased;
+	}
+
+	.bodyContent--cl h2 {
+		font-size: 22px;
+		text-align: left;
+	}
+
+	.bodyContent--cl p {
+		font-size: 18px;
+		line-height: 1.3em;
+	}
+
+	.social--cl li {
+		font-size: 28px; 
+	}
+
+	.social--cl a:hover:before {
+	  transform: scale(0);
+	  transition: all 0.3s ease-in;
+	}
+
+	.social--cl a:hover i {
+	  transform: scale(2.2);
+	  -ms-transform: scale(2.2);
+	  -webkit-transform: scale(2.2);
+	  color: $clOrange;
+	  background: -webkit-linear-gradient(135deg, $clPink 30%, $clOrange);
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+	  transition: all 0.3s ease-in;
+	}
+
+	.letsChat a {
+		border-bottom: 1px dashed $clPink;
+	}
+
+	.letsChat a:hover {
+		border-bottom: 1px solid $clPink;
+	}
+
+	.footer--cl {
+		font-size: 18px;
+		-webkit-font-smoothing: antialiased;
+		letter-spacing: 1px;
+	}
+}
+
+@media (min-width: 1200px){
+
+	.hero--skyline {
+		background-image: url("assets/images/CL/OmahaSkyline-large.png");
+		background-position: 50% 100%;
+		background-size: 110% auto;
+	}
+}
+
+@media (min-width: 1600px){
+
+	.hero--skyline {
+		background-position: 0% 100%;
+		background-size: 100% auto;
+	}
+}

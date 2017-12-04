@@ -25,6 +25,17 @@
 	<link href="https://fonts.googleapis.com/css?family=Oxygen|Oswald|Roboto+Mono" rel="stylesheet">
 	<link rel="shortcut icon" type="image/x-icon" href="<?php bloginfo('template_directory'); ?>/assets/images/favicon.ico">
 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110574674-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-110574674-1');
+	</script>
+
+
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/assets/scripts/mobileMenu.js"></script>
 	
 </head>

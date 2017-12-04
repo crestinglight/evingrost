@@ -121,11 +121,11 @@
 				<h2>Cerious Technologies</h2>
 				<h3>Design, UI/UX design, Full stack implementation</h3>
 
-				<p>Cerious Technologies is a leader in the audio equipment community, focused on never-before-heard quality at an affordable price. Each of their cables are handmade and filled with the highest grade synthetic materials. This site is still a work in progrees and will go live November 24th. Click the link to see our progress so far!</p>
+				<p>Cerious Technologies is a leader in the audio equipment community, focused on never-before-heard quality at an affordable price. Each of their cables are handmade and filled with the highest grade synthetic materials. View the site live now!</p>
 
 			</div>
 
-			<a href="http://cerious-tech.s3-website.us-east-2.amazonaws.com/" target="_blank">Visit Site</a>
+			<a href="http://cerioustechnologies.com/" target="_blank">Visit Site</a>
 
 		</div>
 
