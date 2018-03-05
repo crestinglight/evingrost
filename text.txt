@@ -1,0 +1,3 @@
+Server: 35.184.11.118
+Username: BigBear
+SSH Private Key: Code/Keys/google_compute_engine.ppk
