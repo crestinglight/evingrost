@@ -150,7 +150,11 @@
 			<?php 
 
 				$args = array( 
-					'numberposts'		=> '3'
+					'numberposts'		=> '3',
+					'post_status' 		=> 'publish',
+					'post_type'			=> 'post',
+					'order'				=> 'DESC',
+					'orderby' 			=> 'post_date'
 				);
 
 				$recent_posts = wp_get_recent_posts( $args );

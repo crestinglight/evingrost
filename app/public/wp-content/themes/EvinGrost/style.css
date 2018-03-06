@@ -74,7 +74,7 @@ img {
   position: sticky;
   top: 0;
   left: 0;
-  min-width: 100vw;
+  min-width: 100%;
   z-index: 4; }
 
 .l-header--desktop {
@@ -116,7 +116,7 @@ img {
   top: -1px;
   right: 0;
   z-index: 5;
-  min-width: 100vw;
+  min-width: 100%;
   overflow: hidden;
   max-height: 0px; }
 
@@ -173,7 +173,7 @@ img {
   .l-header__blog--desktop {
     display: flex;
     align-items: center;
-    min-width: 100vw;
+    min-width: 100%;
     padding: 10px 20px; }
 
   .l-header__blog--desktop .l-logo {
@@ -236,7 +236,7 @@ img {
     max-width: 400px; } }
 .l-hero {
   display: block;
-  min-width: 100vw;
+  min-width: 100%;
   min-height: 600px;
   padding: 40px 40px 60px; }
 
@@ -272,11 +272,11 @@ img {
 @media (min-width: 1024px) {
   .l-hero__wrapper {
     display: flex;
-    min-width: 100vw;
+    min-width: 100%;
     min-height: 830px; }
 
   .l-hero.l-hero--blog {
-    min-width: 100vw;
+    min-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -308,7 +308,7 @@ img {
     margin: 0px 200px 100px 0px; } }
 .l-work {
   display: block;
-  min-width: 100vw;
+  min-width: 100%;
   padding: 40px; }
 
 .l-work h1 {
@@ -388,7 +388,7 @@ img {
     margin-bottom: 40px; } }
 .l-about {
   display: block;
-  min-width: 100vw;
+  min-width: 100%;
   padding: 40px; }
 
 .l-about h1 {
@@ -695,7 +695,7 @@ body {
 .l-top {
   display: block;
   text-align: center;
-  min-width: 100vw;
+  min-width: 100%;
   position: absolute;
   top: -22%;
   left: 0;
