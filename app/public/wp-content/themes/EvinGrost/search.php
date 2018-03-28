@@ -20,6 +20,15 @@
 
 		<h1>Welcome to the Blog</h1>
 
+		<div class="category__back l-category__back">
+
+			<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'Blog' ) ) ); ?>">
+				Blog Home
+				<img src="<?php bloginfo('template_directory'); ?>/assets/images/categoryCancel.png">
+			</a>
+
+		</div>
+
 		<div class="blog__wrapper l-blog__wrapper">
 
 			<div class="blog__posts l-blog__posts">

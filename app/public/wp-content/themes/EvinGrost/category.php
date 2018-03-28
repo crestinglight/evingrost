@@ -39,9 +39,10 @@
 				<?php 
 
 					$args = array( 
-						'post_type' =>  'post',
-						'posts_per_page' => -1,
-						'orderby' => 'date'
+						'post_type' 		=> 'post',
+						'post_status'		=> 'publish',
+						'posts_per_page' 	=> -1,
+						'orderby' 			=> 'date'
 						);
 
 					$allPosts = get_posts( $args ); 
